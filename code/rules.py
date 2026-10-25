@@ -29,6 +29,10 @@ CHANGELOG = [
      "entry-level check of the '1-3 years' bucket removed from the card stage and left to the full-text stage "
      "(experience_unclear): the card snippet is cut at about 150 characters, so a statement such as "
      "'experience from 1 year' is often not visible on the card. Removed reason: not_entry_level_card"),
+    ("2026-10-25", "v1-draft",
+     "positions from the programme documents checked against the rules (data/processed/programmes/"
+     "graduate_positions.csv): 'больших данных' (big data analyst / engineer, BDA p.5) and 'security tester of "
+     "networks and systems' (Cyber p.9) were not assigned to their programme; patterns added to BDA and Cyber"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -92,6 +96,7 @@ ROLE_TITLE = {
         r"информационн\w* безопасн", r"кибербезопасн", r"cyber ?security", r"\bsecurity\b",
         r"secops", r"\bsoc\b", r"pentest", r"пентест", r"penetration", r"forensic", r"криминалист",
         r"\bиб\b", r"защит\w* информац", r"\bsiem\b", r"\bdlp\b",
+        r"тестировщик\w* безопасн", r"безопасност\w* (компьютерн\w* )?(сет|систем|сервис|приложен|инфраструктур)",
         r"системн\w* администратор", r"сисадмин", r"system administrator", r"sysadmin",
         r"сетев\w* (инженер|администратор)", r"network (engineer|administrator)",
         r"администратор (баз|бд|сет|инфраструкт)", r"\bdba\b", r"database administrator",
@@ -99,7 +104,7 @@ ROLE_TITLE = {
     ],
     # Big Data Analysis: data analyst, data scientist, big data analyst / engineer, ML / AI, BI
     "bda": [
-        r"\bdata\b", r"big ?data", r"аналитик\w* данн", r"инженер\w* данн",
+        r"\bdata\b", r"big ?data", r"больш\w* данн", r"аналитик\w* данн", r"инженер\w* данн",
         r"дата[- ]?(сайентист|аналитик|инженер)", r"machine learning", r"машинн\w* обучен",
         r"\bml\b", r"\bai\b", r"\bии\b", r"искусственн\w* интеллект", r"\bnlp\b",
         r"computer vision", r"компьютерн\w* зрени", r"deep learning",

@@ -1,0 +1,39 @@
+﻿programme,document,pdf_page,section,position_en,position_ru,rules_outcome,same_programme
+cyber,OP_Cybersecurity_2026.pdf,9,list of positions,Information security specialist,Специалист по информационной безопасности,cyber,yes
+cyber,OP_Cybersecurity_2026.pdf,9,list of positions,Information Security Operations Center Specialist,Специалист оперативного центра информационной безопасности,cyber,yes
+cyber,OP_Cybersecurity_2026.pdf,9,list of positions,Information security specialist in communication systems,Специалист по защите информации в инфокоммуникационных системах,cyber,yes
+cyber,OP_Cybersecurity_2026.pdf,9,list of positions,Service security specialist,Специалист по безопасности сервисов,cyber,yes
+cyber,OP_Cybersecurity_2026.pdf,9,list of positions,Digital Forensic specialist,Специалист-криминалист по цифровым технологиям,cyber,yes
+cyber,OP_Cybersecurity_2026.pdf,9,list of positions,Analyst and tester of computer networks and systems security,Аналитик и тестировщик безопасности компьютерных сетей и систем,cyber,yes
+cyber,OP_Cybersecurity_2026.pdf,9,list of positions,Engineer-programmer in the field of information security,Инженер-программист в области информационной безопасности,cyber,yes
+cyber,OP_Cybersecurity_2026.pdf,9,list of positions,IS Auditor,Аудитор ИБ,cyber,yes
+cyber,OP_Cybersecurity_2026.pdf,9,list of positions,"Administrator of databases, computer networks and infrastructure","Администратор баз данных, компьютерных сетей и инфраструктуры",cyber,yes
+cyber,OP_Cybersecurity_2026.pdf,9,atlas of new professions,Cyber investigator,Киберследователь,excluded: no_role_match,-
+cyber,OP_Cybersecurity_2026.pdf,9,atlas of new professions,Cyber protector,Киберпротектор,excluded: no_role_match,-
+cyber,OP_Cybersecurity_2026.pdf,9,atlas of new professions,Cyber protector universal AI,Киберпротектор универсального ИИ,bda,no
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Data Analyst,Аналитик данных,bda,yes
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Data Scientist,Data Scientist,bda,yes
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Big Data Analyst,Аналитик больших данных,bda,yes
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Big Data Engineer,Инженер больших данных,bda,yes
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Software Developer,Разработчик программного обеспечения,se,no
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Electronic Device Developer,Разработчик электронных устройств,se,no
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Technician,Техник,excluded: no_role_match,-
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Head of the organization,Руководитель организации,excluded: senior_title,-
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Deputy head of the structural unit,Зам. руководителя структурного подразделения,excluded: senior_title,-
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Head of the structural unit,Руководитель структурного подразделения,excluded: senior_title,-
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,Expert of the republican center,Эксперт республиканского центра,excluded: no_role_match,-
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,list of positions,"Employee of the national scientific and practical center, university","Сотрудник национального, научно-практического центра, ВУЗа",excluded: no_role_match,-
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,atlas of new professions,AI technologist,Технолог ИИ,bda,yes
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,atlas of new professions,Universal AI developer,Разработчик универсального ИИ,bda,yes
+bda,OP_BigDataAnalysis_2025-2028.pdf,5,atlas of new professions,Artificial neural network designer,Проектировщик искусственных нейронных сетей,excluded: no_role_match,-
+se,OP_SoftwareEngineering_2026-2029.pdf,6,list of positions,Software Engineer,Инженер-программист,se,yes
+se,OP_SoftwareEngineering_2026-2029.pdf,6,list of positions,Software developer,Разработчик программного обеспечения,se,yes
+se,OP_SoftwareEngineering_2026-2029.pdf,6,list of positions,Backend developer,Back-end разработчик,se,yes
+se,OP_SoftwareEngineering_2026-2029.pdf,6,list of positions,Frontend developer,Front-end разработчик,se,yes
+se,OP_SoftwareEngineering_2026-2029.pdf,6,list of positions,Software tester,Тестировщик программного обеспечения,se,yes
+se,OP_SoftwareEngineering_2026-2029.pdf,6,list of positions,Manager of IT systems and projects,Менеджер IT систем и проектов,excluded: excluded_role,-
+se,OP_SoftwareEngineering_2026-2029.pdf,6,list of positions,Architect of IT systems and projects,Архитектор IT систем и проектов,excluded: senior_title,-
+se,OP_SoftwareEngineering_2026-2029.pdf,6,list of positions,Mobile developer,Мобильный разработчик,se,yes
+se,OP_SoftwareEngineering_2026-2029.pdf,6,atlas of new professions,DevOps engineer,DevOps-инженер,excluded: excluded_role,-
+se,OP_SoftwareEngineering_2026-2029.pdf,6,atlas of new professions,Blockchain technologist,Блокчейн-технолог,excluded: no_role_match,-
+se,OP_SoftwareEngineering_2026-2029.pdf,6,atlas of new professions,Web developer (transforming profession),Web-разработчик,se,yes
