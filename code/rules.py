@@ -9,9 +9,14 @@ This file is the screening protocol. Workflow:
 All patterns are regular expressions, matched against lower-case text in which
 the letter "ё" is replaced by "е". Patterns contain Russian and Kazakh words because
 hh.kz vacancies are published mostly in Russian; they are data patterns, not comments.
+
+Source of the positions: the "List of a specialist's positions" section of each programme document
+(Cybersecurity p.9, Big Data Analysis p.5, Software Engineering p.6; see
+data/processed/programmes/graduate_positions.csv). The "Atlas of new professions" section of the documents
+is not used as a source of positions.
 """
 
-RULES_VERSION = "v1-draft"
+RULES_VERSION = "v1-frozen-2026-10-25"
 
 CHANGELOG = [
     # ("2026-10-23", "v1-draft", "first version"),
@@ -33,6 +38,21 @@ CHANGELOG = [
      "positions from the programme documents checked against the rules (data/processed/programmes/"
      "graduate_positions.csv): 'больших данных' (big data analyst / engineer, BDA p.5) and 'security tester of "
      "networks and systems' (Cyber p.9) were not assigned to their programme; patterns added to BDA and Cyber"),
+    ("2026-10-25", "v1-draft",
+     "documentation only, no pattern changed: positions are taken from the 'List of a specialist's positions' "
+     "only, not from the 'Atlas of new professions'; managers and architects listed for SE are excluded as "
+     "not entry level"),
+    ("2026-10-25", "v1-draft",
+     "after the first full-text run (session 1): (1) duplicates are compared by word-set overlap (Jaccard >= 0.80) "
+     "instead of order-sensitive similarity of the first 1500 characters (>= 0.90): the same Andersen traineeships "
+     "re-posted for Almaty and Astana with re-ordered paragraphs scored 0.78-0.86 and were not caught; "
+     "(2) 'quality assurance' added to SE (2 'Quality Assurance Trainee Program' vacancies were unassigned); "
+     "(3) testing titles go to SE before BDA topic words (TESTING_TITLE): 'Software QA Engineer/Intern (AI-Powered)' "
+     "was assigned to BDA because of 'AI'; (4) 'game dev' added to SE"),
+    ("2026-10-25", "v1-frozen-2026-10-25",
+     "rules frozen after the accuracy check of session 1 (logs/accuracy_check_session1.csv): agreement with the "
+     "manual decision 25 of 29 (86%), threshold 70%. No pattern changed at freezing. Sessions 2 and 3 are "
+     "screened with this version; any later change gets a new version and an entry here"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -40,9 +60,13 @@ CHANGELOG = [
 # ---------------------------------------------------------------------------
 
 # Roles that do not appear in any programme's list of graduate positions:
-# 1C, technical writer, managers, product/scrum roles, sales,
+# 1C, technical writer, product/scrum roles, sales,
 # operators/call centre, designers, marketing/SMM/SEO/content, HR/recruiting,
 # business/system analysts, teachers/mentors, low-voltage/CCTV installers, cashiers.
+# Managers: the SE list names "manager of IT systems and projects", but it is a management role
+# that is not entry level, so managers are excluded on the same ground as seniority (see EXCLUDE_SENIOR,
+# which also covers "architect of IT systems and projects" and the BDA "head of ..." positions).
+# DevOps appears only in the SE "Atlas of new professions", which is not a source of positions.
 EXCLUDE_TITLE = [
     r"\b1\s?[сc]\b", r"1с[- ]", r"технич\w* писател", r"technical writer",
     r"менеджер", r"manager", r"product owner", r"scrum", r"проджект",
@@ -103,6 +127,7 @@ ROLE_TITLE = {
         r"инфраструктур",
     ],
     # Big Data Analysis: data analyst, data scientist, big data analyst / engineer, ML / AI, BI
+    # (ML / AI / NLP / computer vision titles are data-science roles, covered by "Data Scientist")
     "bda": [
         r"\bdata\b", r"big ?data", r"больш\w* данн", r"аналитик\w* данн", r"инженер\w* данн",
         r"дата[- ]?(сайентист|аналитик|инженер)", r"machine learning", r"машинн\w* обучен",
@@ -116,11 +141,18 @@ ROLE_TITLE = {
         r"frontend", r"front-end", r"фронтенд", r"backend", r"back-end", r"бэкенд", r"бекенд",
         r"full ?-?stack", r"фулстек", r"mobile", r"мобильн", r"\bios\b", r"android", r"flutter",
         r"react", r"\bjava\b", r"python", r"golang", r"\.net", r"c#", r"\bphp\b", r"node",
-        r"\bqa\b", r"тестировщик", r"тестовик", r"тестирован", r"tester", r"test engineer", r"sdet",
-        r"\bweb\b", r"\bвеб\b",
+        r"\bqa\b", r"quality assurance", r"тестировщик", r"тестовик", r"тестирован", r"tester", r"test engineer",
+        r"sdet", r"\bweb\b", r"\bвеб\b", r"game ?dev", r"геймдев",
     ],
 }
 ROLE_PRIORITY = ["cyber", "bda", "se"]
+
+# Testing roles go to SE before the BDA topic words are checked:
+# "Software QA Engineer (AI-Powered)" is a tester, not a data-science role.
+# Cybersecurity is still checked first ("security tester" stays in Cybersecurity).
+TESTING_TITLE = [
+    r"\bqa\b", r"quality assurance", r"тестировщик", r"тестовик", r"tester", r"test engineer", r"sdet",
+]
 
 # Generic titles (intern, IT specialist, engineer, analyst, junior):
 # the role is unclear from the title and is decided from the full text in step 4
@@ -190,5 +222,5 @@ TEXT_MIN_HITS = 2  # minimum number of matches; the winning group must be unique
 # ---------------------------------------------------------------------------
 
 MIN_DESCRIPTION_CHARS = 300  # shorter descriptions are treated as having no requirements text
-DEDUP_SIMILARITY = 0.90      # text similarity threshold for duplicates (same company and title)
+DEDUP_SIMILARITY = 0.80      # word-set overlap (Jaccard) threshold for duplicates (same company and title)
 SMALL_GROUP_N = 30           # minimum group size for full analysis

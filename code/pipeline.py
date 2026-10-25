@@ -5,10 +5,10 @@ Processing pipeline for hh.kz vacancies (RMT study).
 Step 2 (candidates):
     python3 code/pipeline.py candidates --cards <hh_cards_*.json> --out <folder>
 
-Steps 4-5 (final screening and assignment to programmes):
+Steps 4-5 (final screening and assignment to programmes; vacancy texts go to _private/<out folder name>):
     python3 code/pipeline.py final --cards <hh_cards_*.json> --full <hh_full_*.json> --out <folder>
 
-Readable copy of a raw export (contacts in full texts are masked):
+Readable copy of a raw export (full texts: contacts masked, only inside _private/):
     python3 code/pipeline.py export-csv --json <hh_cards_*.json | hh_full_*.json> --out <file.csv>
 
 Data dictionary, cleaning log and data-quality shares (T10):
@@ -29,7 +29,6 @@ import re
 import sys
 from collections import Counter, defaultdict
 from datetime import datetime
-from difflib import SequenceMatcher
 from urllib.parse import parse_qs, urlparse
 
 import rules as R
@@ -78,6 +77,7 @@ JUNIOR = compile_list(R.JUNIOR_MARKERS)
 EXP_OK = compile_list(R.EXPERIENCE_OK_TEXT)
 EXP_HIGH = compile_list(R.EXPERIENCE_TOO_HIGH)
 TEXT = {g: compile_list(p) for g, p in R.TEXT_MARKERS.items()}
+TESTING = compile_list(R.TESTING_TITLE)
 
 
 def first_hit(pats, text):
@@ -155,9 +155,10 @@ def mask_contacts(text):
 # ---------------------------------------------------------------------------
 
 def bucket_of(card):
-    # Experience labels on hh.kz cards are in Russian: "no experience", "1-3 years", "3-6 years", "over 6"
+    # Experience labels on hh.kz are in Russian: "no experience" (card) / "not required" (vacancy page),
+    # "1-3 years", "3-6 years", "over 6"
     exp = norm(card.get("experience")) or norm(card.get("raw"))
-    if re.search(r"без опыта|опыт не нужен|no experience", exp):
+    if re.search(r"без опыта|опыт не нужен|не требуется|no experience", exp):
         return "noExperience"
     if re.search(r"1\s*[–-]\s*3", exp):
         return "between1And3"
@@ -172,6 +173,8 @@ def title_role(title):
     for g in R.ROLE_PRIORITY:
         hit = first_hit(ROLE[g], title)
         if hit:
+            if g == "bda" and first_hit(TESTING, title):
+                return "se", first_hit(TESTING, title)
             return g, hit
     return None, None
 
@@ -255,8 +258,22 @@ def assign_group(title, text):
     return None, "unassigned", json.dumps(scores)
 
 
+def word_overlap(a, b):
+    # Jaccard index of the word sets: insensitive to re-ordered paragraphs
+    wa, wb = set(norm(a).split()), set(norm(b).split())
+    return len(wa & wb) / len(wa | wb) if wa | wb else 0.0
+
+
+def clean_vacancy(v):
+    # hh.kz appends the archive notice ("В архиве с <date>") to the title of archived vacancies
+    if v and v.get("title"):
+        v = {**v, "title": re.split(r"\n\s*в архиве", v["title"], flags=re.I)[0].strip()}
+    return v
+
+
 def screen_all(cards, full):
     """Runs both screening stages and deduplication. Returns a dict with every intermediate result."""
+    full = {i: clean_vacancy(v) for i, v in full.items()}
     stage1 = Counter()
     candidates, card_rows = [], []
     for c in cards.values():
@@ -315,8 +332,7 @@ def screen_all(cards, full):
             for b in group[i + 1:]:
                 if b["id"] in dup_ids:
                     continue
-                sim = SequenceMatcher(None, norm(a.get("description"))[:1500], norm(b.get("description"))[:1500]).ratio()
-                if sim >= R.DEDUP_SIMILARITY:
+                if word_overlap(a.get("description"), b.get("description")) >= R.DEDUP_SIMILARITY:
                     dup_ids.add(b["id"])
     for row in log:
         if row["id"] in dup_ids:
@@ -330,13 +346,22 @@ def screen_all(cards, full):
 FINAL_FIELDS = ["id", "group", "assign_basis", "borderline", "bucket", "title", "company", "location", "city",
                 "experience", "employment", "salary", "published", "key_skills", "description", "url", "search_url",
                 "saved_at"]
+# Vacancy texts are not published (hh.kz user agreement, clauses 9.4-9.7): the public dataset keeps
+# metadata and the hh link; the texts stay in _private/ and are coded from there
+PUBLIC_FIELDS = [f for f in FINAL_FIELDS if f != "description"] + ["description_chars"]
 
 
 def publishable(rec):
-    # Copy of a vacancy that is safe to publish: contacts masked, raw HTML dropped
+    # Copy of a vacancy with contacts masked and raw HTML dropped
     out = {k: v for k, v in rec.items() if k != "description_html"}
     out["description"], _ = mask_contacts(rec.get("description"))
+    out["description_chars"] = len(rec.get("description") or "")
     return out
+
+
+def private_dir(out):
+    # _private/<session folder>, next to the public output folder name
+    return os.path.join("_private", os.path.basename(os.path.normpath(out)))
 
 
 def cmd_final(args):
@@ -346,9 +371,17 @@ def cmd_final(args):
     s = screen_all(cards, full)
     final = [publishable(r) for r in s["final"]]
 
-    write_csv(os.path.join(args.out, "final_dataset.csv"), final, FINAL_FIELDS)
-    with open(os.path.join(args.out, "final_dataset.json"), "w", encoding="utf-8") as f:
+    priv = args.private or private_dir(args.out)
+    os.makedirs(priv, exist_ok=True)
+    write_csv(os.path.join(priv, "final_dataset_full.csv"), final, FINAL_FIELDS)
+    with open(os.path.join(priv, "final_dataset_full.json"), "w", encoding="utf-8") as f:
         json.dump(final, f, ensure_ascii=False, indent=1)
+    public = [{k: r.get(k) for k in PUBLIC_FIELDS} for r in final]
+    write_csv(os.path.join(args.out, "final_dataset.csv"), public, PUBLIC_FIELDS)
+    with open(os.path.join(args.out, "final_dataset.json"), "w", encoding="utf-8") as f:
+        json.dump(public, f, ensure_ascii=False, indent=1)
+    print(f"Public dataset (no vacancy texts): {args.out}/final_dataset.csv")
+    print(f"Private dataset with texts: {priv}/final_dataset_full.csv\n")
     write_csv(os.path.join(args.out, "screening_log.csv"), s["log"],
               ["id", "decision", "reason", "detail", "group", "borderline", "bucket", "title", "company"])
 
@@ -449,6 +482,8 @@ def cmd_export_csv(args):
     with open(args.json, encoding="utf-8") as f:
         data = json.load(f)
     if "vacancies" in data:
+        if not os.path.normpath(args.out).split(os.sep)[0] == "_private":
+            sys.exit("Full vacancy texts are not published: write this CSV inside _private/")
         items, _ = load_many([args.json], "vacancies")
         rows, masked = [], Counter()
         for v in items.values():
@@ -484,7 +519,8 @@ FIELD_INFO = {
     "salary": ("nominal", "text, KZT or other", "salary as displayed (not parsed)"),
     "published": ("interval", "date", "publication date (JSON-LD datePosted)"),
     "key_skills": ("nominal", "list of tags", "hh 'Key skills' field"),
-    "description": ("ratio", "characters (length)", "full vacancy text, contacts masked"),
+    "description": ("ratio", "characters (length)", "full vacancy text, contacts masked (private copy only)"),
+    "description_chars": ("ratio", "characters", "length of the vacancy text"),
     "url": ("nominal", "-", "vacancy URL"),
     "search_url": ("nominal", "-", "search page the card came from"),
     "saved_at": ("interval", "timestamp, UTC", "time the full text was saved"),
@@ -641,7 +677,7 @@ def cleaning_log(cards, card_files, full, s):
                  "rows_before": len(s["included"]), "rows_after": len(s["included"]),
                  "revealed": f"{mismatch} experience mismatches, {future} dates in the future"})
     rows.append({"step": "Duplicates removed (same company, title and text)",
-                 "rule": f"same company and title, text similarity >= {R.DEDUP_SIMILARITY} -> later one excluded",
+                 "rule": f"same company and title, word-set overlap (Jaccard) >= {R.DEDUP_SIMILARITY} -> later one excluded",
                  "rows_before": len(s["included"]), "rows_after": len(s["final"]),
                  "revealed": f"{len(s['dup_ids'])} duplicates"})
     empty_skills = sum(1 for r in s["final"] if is_missing(r.get("key_skills")))
@@ -752,6 +788,8 @@ def cmd_sample_check(args):
             print(f"Warning: only {len(pick)} vacancies available for stage '{stage}'")
         for r in sorted(pick, key=lambda r: r["id"]):
             rows.append({**r, "stage": stage, "url": f"https://hh.kz/vacancy/{r['id']}"})
+    # Mixed order, so that the position of a row does not reveal the code's decision
+    rng.shuffle(rows)
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     write_csv(args.out, rows, CHECK_FIELDS)
     print(f"Seed {args.seed}: {len(rows)} vacancies -> {args.out}")
@@ -770,6 +808,7 @@ def main():
     b.add_argument("--cards", nargs="+", required=True)
     b.add_argument("--full", nargs="+", required=True)
     b.add_argument("--out", default="out")
+    b.add_argument("--private", help="folder for the dataset with vacancy texts (default: _private/<out folder name>)")
     c = sub.add_parser("export-csv", help="Readable CSV copy of a raw JSON export (contacts masked)")
     c.add_argument("--json", required=True)
     c.add_argument("--out", required=True)
