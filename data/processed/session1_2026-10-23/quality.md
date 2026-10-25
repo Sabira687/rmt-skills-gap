@@ -1,0 +1,37 @@
+# Data quality report
+
+Generated: 2026-10-25 15:08 · rules: `v1-draft`
+
+Inputs: data/raw/vacancies/session1_2026-10-23/hh_cards_2026-10-25-09-39.json
+
+## T10 data-quality shares
+
+> Card stage only: shares that need full texts are not computed yet.
+
+| measure | definition | count | base | observed | expected | verdict |
+|---|---|---|---|---|---|---|
+| not_entry_level_1_3 | 1-3 year postings that match a programme position: excluded as not entry level (card stage + full-text stage) / all that reached the entry-level check | 188 | 241 | 78.0% | 70%-85% | within expected range |
+
+## Cleaning log (E.3)
+
+| step | rule | rows_before | rows_after | revealed |
+|---|---|---|---|---|
+| Duplicates removed (same ID) | cards merged by hh vacancy ID across export files | 654 | 654 | 0 repeated IDs |
+| Impossible values handled (cards) | empty title or experience bucket not recognised -> reported, card kept | 654 | 654 | 0 empty titles, 0 unknown buckets |
+
+## Data dictionary (E.2): search cards, 654 rows
+
+| field | type | unit | meaning | values_or_range | missing_n | missing_pct |
+|---|---|---|---|---|---|---|
+| id | nominal | - | hh vacancy ID | 654 distinct values | 0 | 0.0% |
+| title | nominal | - | vacancy title | 528 distinct values | 0 | 0.0% |
+| company | nominal | - | employer name | 451 distinct values | 0 | 0.0% |
+| city | nominal | - | city on the search card | 290 distinct values | 0 | 0.0% |
+| experience | ordinal | experience bucket | experience label on the vacancy page | Опыт 1-3 года (555), Без опыта (99) | 0 | 0.0% |
+| salary | nominal | text, KZT or other | salary as displayed (not parsed) | - | 654 | 100.0% |
+| snippet | nominal | text | requirement and responsibility snippets on the search card | 610 distinct values | 0 | 0.0% |
+| raw | nominal | text | whole text of the search card (fallback) | 647 distinct values | 0 | 0.0% |
+| search_url | nominal | - | search page the card came from | https://astana.hh.kz/search/vacancy?area=40&enable_snippets=true&ored_clusters=true&items_on_page=100&experience=between1And3&professional_role=156&professional_role=160&professional_role=10&professional_role=25&professional_role=165&professional_role=73&professional_role=96&professional_role=104&professional_role=157&professional_role=107&professional_role=112&professional_role=113&professional_role=114&professional_role=116&professional_role=121&professional_role=124&professional_role=125&professional_role=164&search_field=name&search_field=company_name&search_field=description&hhtmSourceLabel=vacancy_search_list&page=2&search_session_id=ae55fb38-3389-4cb7-8630-d5b4f58f8e7e (100), https://astana.hh.kz/search/vacancy?area=40&enable_snippets=true&ored_clusters=true&items_on_page=100&experience=between1And3&professional_role=156&professional_role=160&professional_role=10&professional_role=25&professional_role=165&professional_role=73&professional_role=96&professional_role=104&professional_role=157&professional_role=107&professional_role=112&professional_role=113&professional_role=114&professional_role=116&professional_role=121&professional_role=124&professional_role=125&professional_role=164&search_field=name&search_field=company_name&search_field=description&hhtmSourceLabel=vacancy_search_list&page=3&search_session_id=ae55fb38-3389-4cb7-8630-d5b4f58f8e7e (100), https://astana.hh.kz/search/vacancy?area=40&enable_snippets=true&ored_clusters=true&items_on_page=100&hhtmFromLabel=drawer_filter&hhtmFrom=vacancy_search_list&experience=between1And3&professional_role=156&professional_role=160&professional_role=10&professional_role=25&professional_role=165&professional_role=73&professional_role=96&professional_role=104&professional_role=157&professional_role=107&professional_role=112&professional_role=113&professional_role=114&professional_role=116&professional_role=121&professional_role=124&professional_role=125&professional_role=164&search_field=name&search_field=company_name&search_field=description&hhtmSource=vacancy_search_list&hhtmSourceLabel=vacancy_search_list (100), https://astana.hh.kz/search/vacancy?area=40&enable_snippets=true&ored_clusters=true&items_on_page=100&experience=between1And3&professional_role=156&professional_role=160&professional_role=10&professional_role=25&professional_role=165&professional_role=73&professional_role=96&professional_role=104&professional_role=157&professional_role=107&professional_role=112&professional_role=113&professional_role=114&professional_role=116&professional_role=121&professional_role=124&professional_role=125&professional_role=164&search_field=name&search_field=company_name&search_field=description&hhtmSourceLabel=vacancy_search_list&page=1&search_session_id=ae55fb38-3389-4cb7-8630-d5b4f58f8e7e (100), https://astana.hh.kz/search/vacancy?area=40&enable_snippets=true&ored_clusters=true&items_on_page=100&experience=between1And3&professional_role=156&professional_role=160&professional_role=10&professional_role=25&professional_role=165&professional_role=73&professional_role=96&professional_role=104&professional_role=157&professional_role=107&professional_role=112&professional_role=113&professional_role=114&professional_role=116&professional_role=121&professional_role=124&professional_role=125&professional_role=164&search_field=name&search_field=company_name&search_field=description&hhtmSourceLabel=vacancy_search_list&page=4&search_session_id=ae55fb38-3389-4cb7-8630-d5b4f58f8e7e (100), https://astana.hh.kz/search/vacancy?area=40&enable_snippets=true&experience=noExperience&ored_clusters=true&professional_role=156&professional_role=160&professional_role=10&professional_role=25&professional_role=165&professional_role=73&professional_role=96&professional_role=104&professional_role=157&professional_role=107&professional_role=112&professional_role=113&professional_role=114&professional_role=116&professional_role=121&professional_role=124&professional_role=125&professional_role=164&items_on_page=100&search_session_id=f7133d74-d28c-4875-8dbd-e16260577857&hhtmFromLabel=search_order_button&hhtmFrom=vacancy_search_list (99), https://astana.hh.kz/search/vacancy?area=40&enable_snippets=true&ored_clusters=true&items_on_page=100&experience=between1And3&professional_role=156&professional_role=160&professional_role=10&professional_role=25&professional_role=165&professional_role=73&professional_role=96&professional_role=104&professional_role=157&professional_role=107&professional_role=112&professional_role=113&professional_role=114&professional_role=116&professional_role=121&professional_role=124&professional_role=125&professional_role=164&search_field=name&search_field=company_name&search_field=description&hhtmSourceLabel=vacancy_search_list&page=5&search_session_id=ae55fb38-3389-4cb7-8630-d5b4f58f8e7e (55) | 0 | 0.0% |
+| harvested_at | interval | timestamp, UTC | time the card was last harvested | 2026-10-25 to 2026-10-25 | 0 | 0.0% |
+| first_seen | interval | timestamp, UTC | time the card was first harvested | 2026-10-25 to 2026-10-25 | 0 | 0.0% |
+

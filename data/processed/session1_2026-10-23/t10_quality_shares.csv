@@ -1,0 +1,2 @@
+﻿measure,definition,count,base,observed,expected,verdict
+not_entry_level_1_3,1-3 year postings that match a programme position: excluded as not entry level (card stage + full-text stage) / all that reached the entry-level check,188,241,78.0%,70%-85%,within expected range

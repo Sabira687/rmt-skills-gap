@@ -15,6 +15,16 @@ RULES_VERSION = "v1-draft"
 
 CHANGELOG = [
     # ("2026-10-23", "v1-draft", "first version"),
+    ("2026-10-25", "v1-draft",
+     "Latin look-alike letters inside Cyrillic words are mapped to Cyrillic before matching "
+     "(7 cards titled 'Cистемный администратор' with a Latin 'C' were missed as no_role_match)"),
+    ("2026-10-25", "v1-draft",
+     "'тестовик' (colloquial 'tester') added to SE positions; 'системотехник' (systems technician) "
+     "added to generic titles, so its group is decided by the full text"),
+    ("2026-10-25", "v1-draft",
+     "support / helpdesk / DevOps / SRE moved to EXCLUDE_TITLE_SOFT: they no longer exclude a title "
+     "that also names a programme position explicitly (POSITION_OVERRIDE), e.g. 'Support Backend Developer', "
+     "'DevOps / SysAdmin'. Such vacancies are flagged in the 'borderline' column"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -22,21 +32,37 @@ CHANGELOG = [
 # ---------------------------------------------------------------------------
 
 # Roles that do not appear in any programme's list of graduate positions:
-# 1C, technical writer, managers, product/scrum roles, sales, support/helpdesk,
+# 1C, technical writer, managers, product/scrum roles, sales,
 # operators/call centre, designers, marketing/SMM/SEO/content, HR/recruiting,
-# DevOps/SRE, business/system analysts, teachers/mentors, low-voltage/CCTV installers, cashiers.
+# business/system analysts, teachers/mentors, low-voltage/CCTV installers, cashiers.
 EXCLUDE_TITLE = [
     r"\b1\s?[сc]\b", r"1с[- ]", r"технич\w* писател", r"technical writer",
     r"менеджер", r"manager", r"product owner", r"scrum", r"проджект",
-    r"продаж", r"\bsales\b", r"поддержк", r"support", r"help ?desk", r"хелпдеск",
+    r"продаж", r"\bsales\b",
     r"оператор", r"колл-?центр", r"call[- ]?(center|центр)",
     r"дизайнер", r"designer", r"ui/ux", r"ux/ui",
     r"маркетолог", r"маркетинг", r"marketing", r"\bsmm\b", r"\bseo\b", r"контент", r"content",
     r"рекрутер", r"recruit", r"\bhr\b",
-    r"devops", r"\bsre\b",
     r"бизнес-?аналит", r"business analyst", r"системн\w* аналит", r"system analyst",
     r"преподават", r"учител", r"teacher", r"tutor", r"ментор", r"mentor", r"куратор",
     r"слаботоч", r"видеонаблюд", r"монтаж", r"электрик", r"кассир",
+]
+
+# Support/helpdesk and DevOps/SRE describe the work context rather than a different occupation.
+# They exclude a title only when it does not also name a programme position from POSITION_OVERRIDE:
+# "Technical support specialist" is excluded, "Support Backend Developer" and "DevOps / SysAdmin" are not.
+EXCLUDE_TITLE_SOFT = [
+    r"поддержк", r"support", r"help ?desk", r"хелпдеск", r"devops", r"\bsre\b",
+]
+
+# Explicit graduate positions (job nouns, not topics such as "AI" or "mobile")
+POSITION_OVERRIDE = [
+    r"разработчик", r"developer", r"программист", r"programmer",
+    r"data (engineer|scientist|analyst)", r"инженер\w* данн", r"аналитик\w* данн",
+    r"\bqa\b", r"тестировщик", r"тестовик", r"tester",
+    r"системн\w* администратор", r"сисадмин", r"sysadmin", r"system administrator",
+    r"сетев\w* (инженер|администратор)", r"network (engineer|administrator)",
+    r"специалист\w* (по )?(информационн\w* |кибер)безопасн", r"security (engineer|analyst|specialist)",
 ]
 
 # Seniority above entry level - always excluded
@@ -81,7 +107,7 @@ ROLE_TITLE = {
         r"frontend", r"front-end", r"фронтенд", r"backend", r"back-end", r"бэкенд", r"бекенд",
         r"full ?-?stack", r"фулстек", r"mobile", r"мобильн", r"\bios\b", r"android", r"flutter",
         r"react", r"\bjava\b", r"python", r"golang", r"\.net", r"c#", r"\bphp\b", r"node",
-        r"\bqa\b", r"тестировщик", r"тестирован", r"tester", r"test engineer", r"sdet",
+        r"\bqa\b", r"тестировщик", r"тестовик", r"тестирован", r"tester", r"test engineer", r"sdet",
         r"\bweb\b", r"\bвеб\b",
     ],
 }
@@ -92,6 +118,7 @@ ROLE_PRIORITY = ["cyber", "bda", "se"]
 GENERIC_TITLE = [
     r"стаж[её]р", r"стажировк", r"intern", r"trainee", r"\bit\b", r"айти",
     r"инженер", r"engineer", r"специалист", r"аналитик", r"analyst", r"младш", r"junior",
+    r"системотехник",
 ]
 
 # ---------------------------------------------------------------------------
