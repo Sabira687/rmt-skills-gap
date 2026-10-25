@@ -1,31 +1,31 @@
 ﻿id,stage,code_decision,code_group,my_decision,my_group,agree,hh_role_matches,comment,code_reason,title,url
-138596342,included,included,se,included,se,,,,,Специалист по вайб-кодингу (Vibe Coding Specialist),https://hh.kz/vacancy/138596342
-138606103,excluded_full_text,excluded,,excluded,,,,,experience_too_high,Продуктовый аналитик / Product Analyst,https://hh.kz/vacancy/138606103
-138123452,included,included,cyber,excluded,"",,,,,Помощник системного администратора,https://hh.kz/vacancy/138123452
-138213741,excluded_full_text,excluded,,included,se,,,,experience_unclear,Cистемный администратор,https://hh.kz/vacancy/138213741
-137867762,excluded_full_text,excluded,,excluded,,,,,experience_too_high,Системный администратор,https://hh.kz/vacancy/137867762
-137865190,excluded_full_text,excluded,,excluded,,,,,experience_unclear,Fullstack-разработчик,https://hh.kz/vacancy/137865190
-138287476,excluded_full_text,excluded,,excluded,,,,,experience_too_high,Splunk Administrator / Anti-Fraud Implementation Engineer (Junior / Middle),https://hh.kz/vacancy/138287476
-138662069,excluded_card,excluded,,excluded,,,,,senior_title,Ведущий специалист по анализу и отчетности бизнес-сегмента,https://hh.kz/vacancy/138662069
-138297617,included,included,se,included,se,,,,,QA Automation Trainee,https://hh.kz/vacancy/138297617
-138519767,included,included,se,included,se,,,,,Web-разработчик / IT-специалист,https://hh.kz/vacancy/138519767
-137788389,excluded_card,excluded,,excluded,,,,,excluded_role,Junior Game Designer,https://hh.kz/vacancy/137788389
-138688925,excluded_full_text,excluded,,included,se,,,,experience_too_high,Системный администратор,https://hh.kz/vacancy/138688925
-138408886,excluded_card,excluded,,excluded,,,,,no_role_match,Интегратор автоматизации,https://hh.kz/vacancy/138408886
-138347788,included,included,se,included,se,,,,,Quality Assurance Trainee Program,https://hh.kz/vacancy/138347788
-136527704,excluded_full_text,excluded,,excluded,,,,,experience_too_high,BI Developer,https://hh.kz/vacancy/136527704
-138020957,included,included,se,included,se,,,,,PHP-разработчик,https://hh.kz/vacancy/138020957
-138360468,excluded_card,excluded,,excluded,,,,,senior_title,"Middle+ Python-разработчик (Управление сопровождения скоринговых систем, FREEDOM)",https://hh.kz/vacancy/138360468
-138730627,excluded_card,excluded,,excluded,,,,,excluded_role,Solution Sales Manager (Data & AI),https://hh.kz/vacancy/138730627
-138460363,included,included,cyber,included,cyber,,,,,Системный администратор,https://hh.kz/vacancy/138460363
-138258657,excluded_full_text,excluded,,included,se,,,,unassigned_role,Инженер / Технический специалист,https://hh.kz/vacancy/138258657
-138198959,excluded_full_text,excluded,,excluded,,,,,experience_unclear,AI - Workshop Leader,https://hh.kz/vacancy/138198959
-138579725,included,included,cyber,included,cyber,,,,,Системный администратор,https://hh.kz/vacancy/138579725
-138520922,excluded_card,excluded,,excluded,,,,,excluded_role,Менеджер 1С,https://hh.kz/vacancy/138520922
-138264761,included,included,se,included,se,,,,,.NET Trainee,https://hh.kz/vacancy/138264761
-138720085,excluded_card,excluded,,excluded,,,,,excluded_role,"Product manager IT(Узбекистан,Ташкент)",https://hh.kz/vacancy/138720085
-137784794,excluded_card,excluded,,excluded,,,,,excluded_role,Junior Project Manager,https://hh.kz/vacancy/137784794
-138738408,excluded_full_text,excluded,,excluded,,,,,experience_unclear,QA-инженер,https://hh.kz/vacancy/138738408
-138110706,included,included,cyber,included,cyber,,,,,Инженер второй линии технической поддержки/Системный администратор,https://hh.kz/vacancy/138110706
-138662402,excluded_card,excluded,,excluded,,,,,no_role_match,Супервайзер по продуктам дополнительных доходов,https://hh.kz/vacancy/138662402
-138791873,excluded_card,excluded,,,,,,,no_role_match,Координатор проектов по кадровому сопровождению,https://hh.kz/vacancy/138791873
+138596342,included,included,se,included,se,,yes,,,Специалист по вайб-кодингу (Vibe Coding Specialist),https://hh.kz/vacancy/138596342
+138606103,excluded_full_text,excluded,,excluded,,,yes,,experience_too_high,Продуктовый аналитик / Product Analyst,https://hh.kz/vacancy/138606103
+138123452,included,included,cyber,excluded,"",,yes,,,Помощник системного администратора,https://hh.kz/vacancy/138123452
+138213741,excluded_full_text,excluded,,included,se,,yes,,experience_unclear,Cистемный администратор,https://hh.kz/vacancy/138213741
+137867762,excluded_full_text,excluded,,excluded,,,yes,,experience_too_high,Системный администратор,https://hh.kz/vacancy/137867762
+137865190,excluded_full_text,excluded,,excluded,,,yes,,experience_unclear,Fullstack-разработчик,https://hh.kz/vacancy/137865190
+138287476,excluded_full_text,excluded,,excluded,,,yes,,experience_too_high,Splunk Administrator / Anti-Fraud Implementation Engineer (Junior / Middle),https://hh.kz/vacancy/138287476
+138662069,excluded_card,excluded,,excluded,,,yes,,senior_title,Ведущий специалист по анализу и отчетности бизнес-сегмента,https://hh.kz/vacancy/138662069
+138297617,included,included,se,included,se,,yes,,,QA Automation Trainee,https://hh.kz/vacancy/138297617
+138519767,included,included,se,included,se,,yes,,,Web-разработчик / IT-специалист,https://hh.kz/vacancy/138519767
+137788389,excluded_card,excluded,,excluded,,,yes,,excluded_role,Junior Game Designer,https://hh.kz/vacancy/137788389
+138688925,excluded_full_text,excluded,,included,se,,yes,,experience_too_high,Системный администратор,https://hh.kz/vacancy/138688925
+138408886,excluded_card,excluded,,excluded,,,no,,no_role_match,Интегратор автоматизации,https://hh.kz/vacancy/138408886
+138347788,included,included,se,included,se,,yes,,,Quality Assurance Trainee Program,https://hh.kz/vacancy/138347788
+136527704,excluded_full_text,excluded,,excluded,,,yes,,experience_too_high,BI Developer,https://hh.kz/vacancy/136527704
+138020957,included,included,se,included,se,,yes,,,PHP-разработчик,https://hh.kz/vacancy/138020957
+138360468,excluded_card,excluded,,excluded,,,no,,senior_title,"Middle+ Python-разработчик (Управление сопровождения скоринговых систем, FREEDOM)",https://hh.kz/vacancy/138360468
+138730627,excluded_card,excluded,,excluded,,,yes,,excluded_role,Solution Sales Manager (Data & AI),https://hh.kz/vacancy/138730627
+138460363,included,included,cyber,included,cyber,,yes,,,Системный администратор,https://hh.kz/vacancy/138460363
+138258657,excluded_full_text,excluded,,included,se,,yes,,unassigned_role,Инженер / Технический специалист,https://hh.kz/vacancy/138258657
+138198959,excluded_full_text,excluded,,excluded,,,yes,,experience_unclear,AI - Workshop Leader,https://hh.kz/vacancy/138198959
+138579725,included,included,cyber,included,cyber,,yes,,,Системный администратор,https://hh.kz/vacancy/138579725
+138520922,excluded_card,excluded,,excluded,,,yes,,excluded_role,Менеджер 1С,https://hh.kz/vacancy/138520922
+138264761,included,included,se,included,se,,yes,,,.NET Trainee,https://hh.kz/vacancy/138264761
+138720085,excluded_card,excluded,,excluded,,,yes,,excluded_role,"Product manager IT(Узбекистан,Ташкент)",https://hh.kz/vacancy/138720085
+137784794,excluded_card,excluded,,excluded,,,yes,,excluded_role,Junior Project Manager,https://hh.kz/vacancy/137784794
+138738408,excluded_full_text,excluded,,excluded,,,yes,,experience_unclear,QA-инженер,https://hh.kz/vacancy/138738408
+138110706,included,included,cyber,included,cyber,,yes,,,Инженер второй линии технической поддержки/Системный администратор,https://hh.kz/vacancy/138110706
+138662402,excluded_card,excluded,,excluded,,,no,,no_role_match,Супервайзер по продуктам дополнительных доходов,https://hh.kz/vacancy/138662402
+138791873,excluded_card,excluded,,excluded,,,no,,no_role_match,Координатор проектов по кадровому сопровождению,https://hh.kz/vacancy/138791873

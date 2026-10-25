@@ -5,3 +5,5 @@ closed_before_full_text,collected candidates archived or skipped / collected can
 duplicates,duplicates removed / included before deduplication,9,68,13.2%,5%-10%,above expected range
 empty_key_skills,final vacancies with an empty 'Key skills' field / final vacancies,18,59,30.5%,25%-35%,within expected range
 unassigned_proxy,"collected candidates whose programme could not be assigned / collected candidates (proxy for role mismatch, no expectation declared)",37,287,12.9%,-,-
+role_mismatch,accuracy-check candidates (included or excluded on full text) where the hh role does not match the text / judged candidates,1,20,5.0%,10%-15%,below expected range
+role_mismatch_all_checked,"all accuracy-check vacancies where the hh role does not match the text / all judged (stratified sample, not representative; no expectation declared)",6,30,20.0%,-,-

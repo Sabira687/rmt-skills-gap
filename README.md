@@ -64,4 +64,4 @@ Collection steps in the browser (userscript): on a search page **N** harvests th
 
 ## Environment
 
-macOS 14.6.1 (arm64), Python 3.14.5, git 2.39.5, Google Chrome with Tampermonkey, userscript v2.2.
+macOS 14.6.1 (arm64), Python 3.14.5, git 2.39.5, Google Chrome 155.0.8059.86 with Tampermonkey 5.5.1, userscript v2.2.

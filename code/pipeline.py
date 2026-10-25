@@ -595,17 +595,24 @@ def t10_shares(cards, full, s, check_rows):
         res["duplicates"] = share(len(s["dup_ids"]), len(s["included"]))
         res["empty_key_skills"] = share(sum(1 for r in s["final"] if is_missing(r.get("key_skills"))), len(s["final"]))
         res["unassigned_proxy"] = share(sum(1 for r in collected if r["reason"] == "unassigned_role"), len(collected))
+    # T10 declares the role-mismatch share for candidates, i.e. vacancies that passed the card stage
     judged = [r for r in check_rows if (r.get("hh_role_matches") or "").strip()]
+    is_no = lambda r: r["hh_role_matches"].strip().lower() in ("no", "0", "false", "n")
+    cand = [r for r in judged if r.get("stage") != "excluded_card"]
+    if cand:
+        res["role_mismatch"] = share(sum(1 for r in cand if is_no(r)), len(cand))
     if judged:
-        no = sum(1 for r in judged if r["hh_role_matches"].strip().lower() in ("no", "0", "false", "n"))
-        res["role_mismatch"] = share(no, len(judged))
+        res["role_mismatch_all_checked"] = share(sum(1 for r in judged if is_no(r)), len(judged))
     return res
 
 
 T10_DEFINITION = {
     "not_entry_level_1_3": "1-3 year candidates excluded on full text as not entry level (experience_unclear, "
                            "experience_too_high) / 1-3 year candidates whose full text reached the experience check",
-    "role_mismatch": "accuracy-check vacancies where the hh role does not match the text / judged vacancies",
+    "role_mismatch": "accuracy-check candidates (included or excluded on full text) where the hh role does not match "
+                     "the text / judged candidates",
+    "role_mismatch_all_checked": "all accuracy-check vacancies where the hh role does not match the text / all judged "
+                                 "(stratified sample, not representative; no expectation declared)",
     "duplicates": "duplicates removed / included before deduplication",
     "empty_key_skills": "final vacancies with an empty 'Key skills' field / final vacancies",
     "closed_before_full_text": "collected candidates archived or skipped / collected candidates",
