@@ -25,6 +25,10 @@ CHANGELOG = [
      "support / helpdesk / DevOps / SRE moved to EXCLUDE_TITLE_SOFT: they no longer exclude a title "
      "that also names a programme position explicitly (POSITION_OVERRIDE), e.g. 'Support Backend Developer', "
      "'DevOps / SysAdmin'. Such vacancies are flagged in the 'borderline' column"),
+    ("2026-10-25", "v1-draft",
+     "entry-level check of the '1-3 years' bucket removed from the card stage and left to the full-text stage "
+     "(experience_unclear): the card snippet is cut at about 150 characters, so a statement such as "
+     "'experience from 1 year' is often not visible on the card. Removed reason: not_entry_level_card"),
 ]
 
 # ---------------------------------------------------------------------------

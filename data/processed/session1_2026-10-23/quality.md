@@ -1,16 +1,15 @@
 # Data quality report
 
-Generated: 2026-10-25 15:08 · rules: `v1-draft`
+Generated: 2026-10-25 15:12 · rules: `v1-draft`
 
 Inputs: data/raw/vacancies/session1_2026-10-23/hh_cards_2026-10-25-09-39.json
 
 ## T10 data-quality shares
 
-> Card stage only: shares that need full texts are not computed yet.
+> Card stage only: the T10 shares need full texts and are not computed yet.
 
 | measure | definition | count | base | observed | expected | verdict |
 |---|---|---|---|---|---|---|
-| not_entry_level_1_3 | 1-3 year postings that match a programme position: excluded as not entry level (card stage + full-text stage) / all that reached the entry-level check | 188 | 241 | 78.0% | 70%-85% | within expected range |
 
 ## Cleaning log (E.3)
 

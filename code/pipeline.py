@@ -180,7 +180,6 @@ def screen_card(card):
     """Returns (decision, reason, detail, borderline).
     borderline is the soft exclusion word that a programme position overrode, or ""."""
     title = norm(card.get("title"))
-    snippet = norm(card.get("snippet")) or norm(card.get("raw"))
     bucket = bucket_of(card)
     junior_title = first_hit(JUNIOR, title)
 
@@ -204,10 +203,8 @@ def screen_card(card):
     if not role and not generic:
         return "out", "no_role_match", "", ""
 
-    if bucket == "between1And3":
-        if not (junior_title or first_hit(JUNIOR, snippet) or first_hit(EXP_OK, snippet)):
-            return "out", "not_entry_level_card", "", ""
-
+    # Entry level of "1-3 years" vacancies is decided on the full text (experience_unclear),
+    # because the card snippet is cut at about 150 characters
     return "candidate", "", role or "generic", soft
 
 
@@ -368,7 +365,6 @@ REASON_TEXT = {
     "excluded_role": "role not in any programme's list of positions",
     "senior_title": "seniority above entry level (title)",
     "no_role_match": "title does not match programme positions",
-    "not_entry_level_card": "1-3 years without junior/intern markers",
     "not_collected": "full text not collected",
     "skipped_manual": "skipped manually (X)",
     "no_requirements": "no requirements text",
@@ -550,16 +546,12 @@ def share(n, d):
 def t10_shares(cards, full, s, check_rows):
     """Each value is (numerator, denominator, share) with the definition in T10_DEFINITION."""
     res = {}
-    # 1-3 years postings that match a programme position but are not entry level
-    reached = [r for r in s["card_rows"] if r["bucket"] == "between1And3"
-               and r["reason"] in ("", "not_entry_level_card")]
-    not_entry = sum(1 for r in reached if r["reason"] == "not_entry_level_card")
     if full:
-        not_entry += sum(1 for r in s["log"] if r["bucket"] == "between1And3"
-                         and r["reason"] in ("experience_unclear", "experience_too_high"))
-    res["not_entry_level_1_3"] = share(not_entry, len(reached))
-
-    if full:
+        # 1-3 years candidates whose full text reached the experience check but are not entry level
+        reached = [r for r in s["log"] if r["bucket"] == "between1And3"
+                   and r["reason"] not in ("not_collected", "skipped_manual", "no_requirements")]
+        not_entry = sum(1 for r in reached if r["reason"] in ("experience_unclear", "experience_too_high"))
+        res["not_entry_level_1_3"] = share(not_entry, len(reached))
         collected = [r for r in s["log"] if r["reason"] not in ("not_collected",)]
         res["no_requirements"] = share(sum(1 for r in collected if r["reason"] == "no_requirements"), len(collected))
         closed = sum(1 for r in collected if full.get(r["id"], {}).get("archived") or r["reason"] == "skipped_manual")
@@ -575,8 +567,8 @@ def t10_shares(cards, full, s, check_rows):
 
 
 T10_DEFINITION = {
-    "not_entry_level_1_3": "1-3 year postings that match a programme position: excluded as not entry level "
-                           "(card stage + full-text stage) / all that reached the entry-level check",
+    "not_entry_level_1_3": "1-3 year candidates excluded on full text as not entry level (experience_unclear, "
+                           "experience_too_high) / 1-3 year candidates whose full text reached the experience check",
     "role_mismatch": "accuracy-check vacancies where the hh role does not match the text / judged vacancies",
     "duplicates": "duplicates removed / included before deduplication",
     "empty_key_skills": "final vacancies with an empty 'Key skills' field / final vacancies",
@@ -704,7 +696,7 @@ def cmd_quality(args):
          f"Inputs: {', '.join(args.cards + (args.full or []))}\n",
          "## T10 data-quality shares\n"]
     if not full:
-        L.append("> Card stage only: shares that need full texts are not computed yet.\n")
+        L.append("> Card stage only: the T10 shares need full texts and are not computed yet.\n")
     L += md_table(t10, t10_cols) + [""]
     L += ["## Cleaning log (E.3)\n"] + md_table(cl, cl_cols) + [""]
     L += [f"## Data dictionary (E.2): {dd_name}, {len(dd_rows)} rows\n"] + md_table(dd, dd_cols) + [""]
