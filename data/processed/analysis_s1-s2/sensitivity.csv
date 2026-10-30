@@ -1,0 +1,13 @@
+﻿programme,variant,n,U_strict,U_soft
+se,all,38,0.2705,0.1932
+se,without_borderline,38,0.2705,0.1932
+se,no_experience_only,20,0.2222,0.1389
+se,one_to_three_years_only,18,0.3232,0.2525
+cyber,all,19,0.1392,0.1013
+cyber,without_borderline,16,0.1618,0.1176
+cyber,no_experience_only,1,,
+cyber,one_to_three_years_only,18,0.137,0.0959
+bda,all,11,0.3962,0.3396
+bda,without_borderline,10,0.3636,0.3182
+bda,no_experience_only,2,,
+bda,one_to_three_years_only,9,0.3864,0.3182

@@ -1,0 +1,8 @@
+﻿measure,value,note
+vacancies checked,20,"SE 8, Cyber 6, BDA 6; random, seed 20261030 (logs/coding_check_sample.csv)"
+category assignments by the dictionary,101,sum of auto_categories over the 20 vacancies
+assignments judged wrong,3,"138253921 cat 3 (node.js), 138351439 cat 3 (soap), 138719767 cat 6 (kafka); all three vacancies are SE"
+assignments confirmed,98,98/101 = 97.0 %
+categories judged missed,0,none entered by the checker; recall was not measured systematically
+vacancies without any error,17,17/20 = 85 %
+effect of removing the 3 wrong cells on U strict,SE 0.2705 -> 0.2696; Cyber and BDA unchanged,what-if on a copy; verdicts ER1-ER6 unchanged; main results not recomputed

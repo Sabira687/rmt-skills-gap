@@ -1,0 +1,7 @@
+﻿programme,scenario,vacancies_with_categories,median_share_covered,fully_covered,share_fully_covered
+se,strict,37,0.75,10,0.2703
+se,soft,37,0.8333,13,0.3514
+cyber,strict,19,1.0,13,0.6842
+cyber,soft,19,1.0,14,0.7368
+bda,strict,11,0.6667,3,0.2727
+bda,soft,11,0.6667,5,0.4545

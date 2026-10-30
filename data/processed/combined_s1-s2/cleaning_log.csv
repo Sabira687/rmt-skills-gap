@@ -1,0 +1,7 @@
+﻿step,rule,rows_before,rows_after,revealed
+Duplicates removed (same ID),cards merged by hh vacancy ID across export files,771,771,0 repeated IDs
+Impossible values handled (cards),"empty title or experience bucket not recognised -> reported, card kept",771,771,"0 empty titles, 0 unknown buckets"
+Missing values handled (description),description shorter than 300 characters -> excluded (no_requirements),342,338,4 vacancies without requirements text
+Impossible values handled (vacancies),"experience on the page differs from the search bucket; publication date after saving date -> reported, vacancy kept",80,80,"0 experience mismatches, 0 dates in the future"
+"Duplicates removed (same company, title and text)","same company and title, word-set overlap (Jaccard) >= 0.8 -> later one excluded",80,68,12 duplicates
+Missing values handled (key skills),"empty 'Key skills' field -> kept, skills are coded from the description text",68,68,22 vacancies with an empty field

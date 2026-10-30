@@ -1,0 +1,58 @@
+﻿programme,category_id,category,C_strict,C_soft
+se,1,Programming Languages,1,1
+se,2,Frontend Development,1,1
+se,3,Backend Frameworks and APIs,1,1
+se,4,Mobile Development,0,1
+se,5,Databases and SQL,1,1
+se,6,Big Data Processing,0,0
+se,7,Machine Learning and Deep Learning,0,1
+se,8,Data Visualization and BI,0,0
+se,9,"Cloud, Containers, and CI/CD",1,1
+se,10,Version Control,0,0
+se,11,Testing and QA,1,1
+se,12,Operating Systems and Linux,0,0
+se,13,Computer Networks,1,1
+se,14,"Monitoring and Incident Response (SOC, SIEM)",0,0
+se,15,Penetration Testing,0,0
+se,16,Digital Forensics and Malware Analysis,0,0
+se,17,"Information Security Standards, Auditing, and Risk Management",1,1
+se,18,Cryptography,0,0
+se,19,Software Architecture and Design,1,1
+cyber,1,Programming Languages,1,1
+cyber,2,Frontend Development,0,0
+cyber,3,Backend Frameworks and APIs,0,0
+cyber,4,Mobile Development,0,0
+cyber,5,Databases and SQL,1,1
+cyber,6,Big Data Processing,0,0
+cyber,7,Machine Learning and Deep Learning,1,1
+cyber,8,Data Visualization and BI,0,0
+cyber,9,"Cloud, Containers, and CI/CD",0,1
+cyber,10,Version Control,0,0
+cyber,11,Testing and QA,0,0
+cyber,12,Operating Systems and Linux,1,1
+cyber,13,Computer Networks,1,1
+cyber,14,"Monitoring and Incident Response (SOC, SIEM)",1,1
+cyber,15,Penetration Testing,1,1
+cyber,16,Digital Forensics and Malware Analysis,1,1
+cyber,17,"Information Security Standards, Auditing, and Risk Management",1,1
+cyber,18,Cryptography,1,1
+cyber,19,Software Architecture and Design,1,1
+bda,1,Programming Languages,1,1
+bda,2,Frontend Development,0,0
+bda,3,Backend Frameworks and APIs,0,0
+bda,4,Mobile Development,0,0
+bda,5,Databases and SQL,1,1
+bda,6,Big Data Processing,1,1
+bda,7,Machine Learning and Deep Learning,1,1
+bda,8,Data Visualization and BI,1,1
+bda,9,"Cloud, Containers, and CI/CD",0,0
+bda,10,Version Control,0,0
+bda,11,Testing and QA,0,0
+bda,12,Operating Systems and Linux,0,0
+bda,13,Computer Networks,1,1
+bda,14,"Monitoring and Incident Response (SOC, SIEM)",0,1
+bda,15,Penetration Testing,0,1
+bda,16,Digital Forensics and Malware Analysis,0,0
+bda,17,"Information Security Standards, Auditing, and Risk Management",1,1
+bda,18,Cryptography,0,0
+bda,19,Software Architecture and Design,1,1

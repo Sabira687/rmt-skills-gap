@@ -1,0 +1,22 @@
+﻿id,value,unit,source_file,note
+n_vacancies_se,38,vacancies,vacancy_skills.csv,
+U_strict_se,0.2705,share,U.csv,
+U_strict_se_ci,0.2161-0.3204,95% bootstrap interval,U.csv,
+U_soft_se,0.1932,share,U.csv,
+U_soft_se_ci,0.1429-0.2400,95% bootstrap interval,U.csv,
+n_vacancies_cyber,19,vacancies,vacancy_skills.csv,
+U_strict_cyber,0.1392,share,U.csv,
+U_strict_cyber_ci,0.0482-0.2445,95% bootstrap interval,U.csv,
+U_soft_cyber,0.1013,share,U.csv,
+U_soft_cyber_ci,0.0286-0.1852,95% bootstrap interval,U.csv,
+n_vacancies_bda,11,vacancies,vacancy_skills.csv,
+U_strict_bda,0.3962,share,U.csv,
+U_strict_bda_ci,0.2791-0.4808,95% bootstrap interval,U.csv,
+U_soft_bda,0.3396,share,U.csv,
+U_soft_bda_ci,0.1999-0.4340,95% bootstrap interval,U.csv,
+verdict_ER1,confirmed,verdict,er_verdicts.csv,"SE 38, Cyber 19, BDA 11"
+verdict_ER2,confirmed,verdict,er_verdicts.csv,se 0.271; cyber 0.139; bda 0.396
+verdict_ER3,not confirmed,verdict,er_verdicts.csv,"se [0.216, 0.320]; cyber [0.048, 0.244]; bda [0.279, 0.481]"
+verdict_ER4,confirmed,verdict,er_verdicts.csv,se-cyber 13.1 pp; se-bda 12.6 pp; cyber-bda 25.7 pp
+verdict_ER5,not confirmed,verdict,er_verdicts.csv,se 7.7 pp; cyber 3.8 pp; bda 5.7 pp
+verdict_ER6,confirmed,verdict,er_verdicts.csv,top-3: Version Control; Machine Learning and Deep Learning [rapid]; Mobile Development [rapid]

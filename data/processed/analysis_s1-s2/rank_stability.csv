@@ -1,0 +1,58 @@
+﻿programme,category_id,category,G_strict,top3_frequency
+se,1,Programming Languages,0.0,0.0
+se,2,Frontend Development,0.0,0.0
+se,3,Backend Frameworks and APIs,0.0,0.0
+se,4,Mobile Development,0.1842,0.588
+se,5,Databases and SQL,0.0,0.0
+se,6,Big Data Processing,0.1316,0.158
+se,7,Machine Learning and Deep Learning,0.2368,0.786
+se,8,Data Visualization and BI,0.0,0.0
+se,9,"Cloud, Containers, and CI/CD",0.0,0.0
+se,10,Version Control,0.5263,1.0
+se,11,Testing and QA,0.0,0.0
+se,12,Operating Systems and Linux,0.1579,0.2455
+se,13,Computer Networks,0.0,0.0
+se,14,"Monitoring and Incident Response (SOC, SIEM)",0.1579,0.22
+se,15,Penetration Testing,0.0,0.0
+se,16,Digital Forensics and Malware Analysis,0.0263,0.0
+se,17,"Information Security Standards, Auditing, and Risk Management",0.0,0.0
+se,18,Cryptography,0.0526,0.0025
+se,19,Software Architecture and Design,0.0,0.0
+cyber,1,Programming Languages,0.0,0.0635
+cyber,2,Frontend Development,0.0,0.005
+cyber,3,Backend Frameworks and APIs,0.0,0.0005
+cyber,4,Mobile Development,0.0526,0.3995
+cyber,5,Databases and SQL,0.0,0.0
+cyber,6,Big Data Processing,0.0526,0.3005
+cyber,7,Machine Learning and Deep Learning,0.0,0.0
+cyber,8,Data Visualization and BI,0.1053,0.5895
+cyber,9,"Cloud, Containers, and CI/CD",0.1579,0.8455
+cyber,10,Version Control,0.1579,0.796
+cyber,11,Testing and QA,0.0526,0.0
+cyber,12,Operating Systems and Linux,0.0,0.0
+cyber,13,Computer Networks,0.0,0.0
+cyber,14,"Monitoring and Incident Response (SOC, SIEM)",0.0,0.0
+cyber,15,Penetration Testing,0.0,0.0
+cyber,16,Digital Forensics and Malware Analysis,0.0,0.0
+cyber,17,"Information Security Standards, Auditing, and Risk Management",0.0,0.0
+cyber,18,Cryptography,0.0,0.0
+cyber,19,Software Architecture and Design,0.0,0.0
+bda,1,Programming Languages,0.0,0.0
+bda,2,Frontend Development,0.0,0.0
+bda,3,Backend Frameworks and APIs,0.3636,0.8115
+bda,4,Mobile Development,0.0,0.0
+bda,5,Databases and SQL,0.0,0.0
+bda,6,Big Data Processing,0.0,0.0
+bda,7,Machine Learning and Deep Learning,0.0,0.0
+bda,8,Data Visualization and BI,0.0,0.0
+bda,9,"Cloud, Containers, and CI/CD",0.5455,1.0
+bda,10,Version Control,0.4545,0.8995
+bda,11,Testing and QA,0.0909,0.0
+bda,12,Operating Systems and Linux,0.1818,0.0725
+bda,13,Computer Networks,0.0,0.0
+bda,14,"Monitoring and Incident Response (SOC, SIEM)",0.2727,0.2165
+bda,15,Penetration Testing,0.0,0.0
+bda,16,Digital Forensics and Malware Analysis,0.0,0.0
+bda,17,"Information Security Standards, Auditing, and Risk Management",0.0,0.0
+bda,18,Cryptography,0.0,0.0
+bda,19,Software Architecture and Design,0.0,0.0

@@ -1,0 +1,40 @@
+category_id,skill,match,pattern
+1,programming languages,word,python|java|javascript|typescript|c\+\+|c#|golang|kotlin|php|ruby|rust|scala|\.net|dotnet|perl|matlab
+1,programming fundamentals,stem,программирован|programming|объектно-ориентированн|ооп|object-oriented|алгоритм|algorithm|структур\w* данных|data structures
+2,frontend,word,html5?|css3?|react(\.?js)?|vue(\.?js)?|angular|svelte|next\.?js|nuxt|sass|scss|bootstrap|tailwind|jquery|redux|webpack|vite|frontend|front-end|front end|фронтенд|фронт-энд|фронт
+2,markup,stem,верстк|web design|responsive
+3,backend frameworks,word,django|flask|fastapi|spring|spring boot|node\.?js|express\.?js|laravel|asp\.net|nestjs|symfony|rails|hibernate|backend|back-end|back end|бэкенд|бекенд|бэк-энд
+3,apis,word,api|rest api|rest-api|restful|graphql|grpc|soap|swagger|openapi|websocket
+3,services,stem,микросервис|microservice|веб-сервис|web service
+4,mobile,word,android|ios|flutter|react native|swiftui|xcode|android studio|jetpack|kotlin multiplatform
+4,mobile generic,stem,мобильн|mobile app
+5,sql and databases,word,sql|mysql|postgres|postgresql|oracle|mongodb|nosql|redis|clickhouse|sqlite|t-sql|pl/sql|ms sql|mssql|elasticsearch|cassandra|dynamodb|субд|database|databases
+5,databases generic,stem,баз\w* данных|база данных|базами данных
+6,big data tools,word,hadoop|spark|pyspark|kafka|airflow|etl|elt|hive|dwh|dbt|databricks|bigquery|snowflake|olap|flink|nifi
+6,big data generic,stem,big data|больш\w+ данн|data warehouse|хранилищ\w* данных|data pipeline|data lake|озер\w* данных
+7,ml and dl,word,machine learning|deep learning|tensorflow|pytorch|scikit-learn|sklearn|keras|nlp|computer vision|llm|pandas|numpy|data science|xgboost|catboost|lightgbm|mlops|opencv|neural networks?|ml|ai
+7,ml generic,stem,машинн\w+ обучени|глубок\w+ обучени|нейронн\w+ сет|нейросет|искусственн\w+ интеллект|статистическ\w+ анализ|data scientist
+8,bi and visualization,word,power bi|powerbi|tableau|looker|looker studio|data studio|metabase|superset|qlik|qlikview|qliksense|matplotlib|seaborn|plotly|dashboards?|bi
+8,visualization generic,stem,дашборд|визуализац|visualization|business intelligence|power-bi
+9,cloud and containers,word,docker|kubernetes|k8s|aws|azure|gcp|google cloud|terraform|ansible|helm|openshift|yandex cloud|devops|ci/cd|ci-cd|jenkins|github actions|gitlab ci|argocd|cloud
+9,cloud generic,stem,облачн|контейнер|container|непрерывн\w+ интеграц|пайплайн
+10,version control,word,git|github|gitlab|bitbucket|svn|mercurial|version control
+10,version control generic,stem,контрол\w+ верси|систем\w* контроля верси|системы управления верси
+11,testing and qa,word,qa|quality assurance|selenium|pytest|junit|testng|postman|jmeter|cypress|playwright|testrail|appium|cucumber|unit tests?|e2e|bug reports?|test cases?|test plans?
+11,testing generic,stem,тестирован|software testing|automated testing|test automation|functional testing|performance testing|load testing|regression testing|manual testing|testing and debugging|тест-кейс|тест кейс|тест-план|чек-лист|автотест|автоматизированн\w+ тест|баг-репорт|баг репорт|багов
+12,os and linux,word,linux|ubuntu|debian|centos|unix|bash|powershell|active directory|red hat|rhel|windows server|systemd|vmware|hyper-v|proxmox
+12,os generic,stem,операционн\w+ систем|администрирован\w+ (сервер|систем|linux|windows|ос\b)|системн\w+ администр|системным администр
+13,networks,word,tcp/ip|tcp|udp|dns|dhcp|vpn|cisco|mikrotik|lan|wan|vlan|ccna|osi|wi-?fi|firewall|bgp|ospf|snmp
+13,networks generic,stem,computer networks?|network (protocol|security|administration|equipment|infrastructure)s?|компьютерн\w+ сет|сетев\w+ (оборудован|протокол|технолог|безопасност|инфраструктур|администр)|маршрутизац|коммутатор|межсетев|брандмауэр|фаервол|локальн\w+ сет|сетевых технолог
+14,monitoring and incident response,word,soc|siem|splunk|qradar|zabbix|prometheus|grafana|elk|edr|xdr|wazuh|arcsight|kibana|threat hunting|threat detection|incident response|soar|nagios
+14,monitoring generic,stem,инцидент|мониторинг|monitoring|анализ\w* логов|анализ\w* событий безопасност|log analysis|реагирован\w+ на инцидент
+15,penetration testing,word,pentest|pentesting|penetration testing|owasp|burp|burp suite|metasploit|nmap|kali|kali linux|red team|bug bounty|exploit|exploits|ethical hacking|vulnerability assessment
+15,pentest generic,stem,пентест|тестирован\w+ на проникновение|уязвимост|vulnerabilit|эксплойт|эксплуатац\w+ уязвимост|анализ защищенност|анализ защищённост
+16,forensics and malware,word,forensics|forensic|malware|volatility|autopsy|ioc|reverse engineering|ida pro|ghidra|dfir
+16,forensics generic,stem,форензик|криминалист|вредоносн|реверс-инжиниринг|реверс инжиниринг|антивирус|anti-virus|antivirus
+17,standards and risk,word,iso 27001|iso27001|27001|iso 27002|nist|gdpr|pci dss|soc 2|compliance|гост р|cyber essentials|cobit|itil
+17,standards generic,stem,аудит\w* (информационной )?безопасност|security audit|risk assessment|risk management|оценк\w+ риск|управлен\w+ риск|риск-менеджмент|комплаенс|политик\w+ (информационной )?безопасност|security polic|персональных данных|суиб|нормативн\w+ документ\w+ по информационной безопасности|кибербезопасност|информационн\w+ безопасност|information security|cybersecurity|cyber security
+18,cryptography,word,rsa|aes|pki|ssl|tls|ssh|pgp|hash|hashing|encryption|cryptography|cryptographic|hmac|ecdsa|jwt|oauth
+18,cryptography generic,stem,криптограф|шифрован|электронн\w+ цифров\w+ подпис|эцп|электронная подпись|hash function|хэш|хеш
+19,architecture and design,word,architecture|uml|solid|ddd|domain-driven|mvc|mvvm|design patterns?|system design|clean architecture|c4|bpmn|archimate|togaf
+19,architecture generic,stem,архитектур|паттерн\w* проектирован|шаблон\w* проектирован|проектирован\w+ (систем|программ|архитектур|баз)|system design|software design

@@ -1,0 +1,343 @@
+﻿id,decision,reason,detail,group,borderline,bucket,title,company
+127271541,excluded,experience_unclear,,,,between1And3,Системный/сетевой администратор,ТОО «Научно-Исследовательская Лаборатория «Гамма Технологии»
+129192272,included,,,se,,noExperience,Intern .NET Developer,Itransition
+133290122,excluded,experience_unclear,,,,between1And3,Системный инженер,BI Group. BI Development
+133406432,excluded,experience_too_high,от 2-х лет,,,between1And3,Инженер информационной безопасности,ТОО ALG Innovations
+133610969,included,,,se,,between1And3,Junior/Middle QA Automation Engineer (Java),АО Home Credit Bank (ДБ АО «ForteBank»)
+133839585,excluded,experience_unclear,,,,between1And3,Системный/сетевой администратор,ТОО «Научно-Исследовательская Лаборатория «Гамма Технологии»
+134219460,excluded,experience_unclear,,,,between1And3,Веб-аналитик,"AIR ASTANA, АО"
+134246951,excluded,experience_unclear,,,,between1And3,SQL-разработчик,"HALYK FINANCE, дочерняя организация АО Народный банк"
+134287994,excluded,experience_too_high,не менее 3 лет,,,between1And3,Инженер-программист станков с ЧПУ,АО Усть-Каменогорский арматурный завод
+134971776,excluded,experience_unclear,,,,between1And3,Java-разработчик,АО «Freedom Bank Kazakhstan»
+135107053,excluded,experience_unclear,,,,between1And3,QA AI specialist,АО Home Credit Bank (ДБ АО «ForteBank»)
+135471668,excluded,experience_unclear,,,,between1And3,Golang-разработчик,АО ForteBank
+136076783,excluded,experience_unclear,,,,between1And3,Аналитик-макроэкономист,Публичная Компания «Freedom Finance Global PLC»
+136098699,included,,,bda,,between1And3,ITAM / SAM Консультант-аналитик (Junior / Middle),ТОО RixMind (ТОО Сквалио Казахстан)
+136193715,excluded,experience_too_high,более 2х лет,,,between1And3,Инженер-программист участка автоматизированных систем управления,ТОО KSP Steel
+136193838,excluded,experience_too_high,не менее 2 лет,,,between1And3,Pre-sale инженер H3C,ТОО VENDER
+136527704,excluded,experience_too_high,2+ years,,,between1And3,BI Developer,ТОО MELKAZ
+136529642,excluded,experience_unclear,,,,between1And3,"Специалист по планированию производства, планированию сырья и материалов",ТОО PepsiCo Central Asia (ПепсиКо Центральная Азия)
+136770657,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Начинающий IT специалист (голосовые и текстовые чат-боты),Частная компания “Automated Communication Solutions Ltd.”
+136915595,excluded,experience_unclear,,,,between1And3,Инженер по виртуализации и резервному копированию,Santo member of Polpharma Group
+136919441,excluded,experience_unclear,,,,between1And3,Инженер-разработчик программно-аппаратных средств,"ASTEL, АО"
+137104228,excluded,experience_unclear,,,,between1And3,Инженер-аналитик,ТОО Евротехсервис К
+137111939,excluded,experience_too_high,2+ years,,,between1And3,AI & Data Analysis Specialist,ТОО KT&G Kazakhstan (Кей-Ти-Энд-Джи Казахстан)
+137156837,excluded,experience_unclear,,,,between1And3,Аналитик (помощник бухгалтера),ТОО Стелл
+137252181,excluded,experience_unclear,,,,between1And3,Аналитик коммерческого отдела,ТОО Сеть магазинов цифровой и бытовой техники ДНС КАЗАХСТАН
+137438758,excluded,duplicate,,se,,between1And3,Junior QA Engineer (Manual),ТОО Playrix
+137531419,excluded,duplicate,,se,,noExperience,Full Stack Test Engineer Trainee,Andersen
+137593642,excluded,experience_unclear,,,,between1And3,Инспектор по кибербезопасности,ТОО Международный Аэропорт ОРАЛ
+137652651,excluded,experience_unclear,,,,between1And3,Специалист клиентского сервиса,ТОО Элита
+137697190,excluded,experience_unclear,,,,between1And3,Системный администратор,Рекрутинговое агентство Fin Career Lab
+137792273,excluded,skipped_manual,,,,between1And3,Специалист по обработке данных,ТОО Дәрі-Фарм (Казахстан)
+137794358,excluded,experience_unclear,,,,between1And3,IT специалист,ТОО Mercury Properties
+137794369,excluded,no_requirements,,,,between1And3,Системотехник,ТОО IT MAXIMA
+137817721,excluded,experience_unclear,,,,between1And3,Аналитик по товару в fashion-рознице (Claude),GURUHI SARMOYAGUZORII SHOHON
+137830827,excluded,experience_unclear,,,,between1And3,Frontend-разработчик/ UI UX,ИП Сушков К В
+137834686,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Специалист по пищевой безопасности,ТОО Star Brands Asia (Стар Брэндс Азия)
+137843653,excluded,experience_unclear,,,,between1And3,Сетевой администратор,ТОО АскомМЕТ
+137857825,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Начинающий специалист по созданию голосовых и текстовых чат-ботов,Частная компания “Automated Communication Solutions Ltd.”
+137862065,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,IT junior specialist,ТОО HYPER SYSTEM
+137865190,excluded,experience_unclear,,,,between1And3,Fullstack-разработчик,ТОО Центр Страхования General Re
+137865989,excluded,experience_unclear,,,,between1And3,Python Optimization Engineer / Quantum Computing (D-Wave),ООО Перфоманс Эксперт
+137867762,excluded,experience_too_high,от 4 лет,,,between1And3,Системный администратор,ЧК ASAM HOLDING LIMITED
+137870749,excluded,experience_unclear,,,,between1And3,Инженер/Специалист по Пожарной промышленной безопасности и ЧС,ТОО ЦПО Кайсар
+137880237,excluded,experience_too_high,не менее 2-х лет,,,between1And3,Специалист по информационной безопасности и защите данных,ТОО НПО ПЕРСПЕКТИВА
+137887576,excluded,experience_unclear,,,,between1And3,IT специалист,ИП Бугимбаева Ч.Ч.
+137888785,excluded,experience_unclear,,,,between1And3,Специалист по IT (ИТ),ТОО KSKE (KazStroyKom Engineering)
+137894033,excluded,experience_unclear,,,,between1And3,Специалист IT отдела,ИП Кипер.KZ
+137895385,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Intern in Strategy and Execution,ТОО EY (Ernst & Young)
+137915291,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,ИТ-специалист,АО Home Credit Bank (ДБ АО «ForteBank»)
+137916318,included,,,bda,,between1And3,Аналитик клиентского опыта/CX Analyst «ForteBank» (г.Астана),АО ForteBank
+137921334,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 1, ""se"": 0}",,,noExperience,Аналитик,ТОО Техинвест проект
+137938222,excluded,experience_unclear,,,,between1And3,Помощник/системного администратора,ТОО Казахский ордена Знак почета научно-исследовательский институт глазных болезней
+137987193,excluded,experience_unclear,,,,between1And3,Сервисный инженер,ТОО Neo Service
+137987204,excluded,experience_unclear,,,,between1And3,Сервисный инженер,ТОО Neo Service
+137988342,excluded,unassigned_role,"{""cyber"": 1, ""bda"": 0, ""se"": 0}",,,noExperience,Инженер,"Казтелепорт, АО"
+137991960,excluded,experience_unclear,,,,between1And3,Коммерческий аналитик,ТОО Прогресс СБТ
+138005373,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Специалист по внедрению IT продукта,ТОО ЧАСТНАЯ КОМПАНИЯ DOODOCS LTD.
+138010571,excluded,experience_too_high,2+ года,,,between1And3,"AI Engineer (LLM-агенты, RAG)",ТОО Documentolog
+138011064,excluded,experience_unclear,,,,between1And3,Системный администратор/Администратор серверов,ТОО NLS Kazakhstan
+138011497,excluded,experience_unclear,,,,between1And3,BI Developer,Kaspi.kz
+138014585,excluded,experience_unclear,,,,between1And3,Программист UI/IX,ТОО МЭК-Астана
+138016994,excluded,experience_too_high,от 2-х лет,,,between1And3,QA manual (mobile&web),АО Народный банк Казахстана. IT
+138018412,excluded,experience_unclear,,,,between1And3,Специалист по анализу и работе с данными\ Data Scientist,ТОО Фармация Юниверсал
+138020252,excluded,experience_unclear,,,,between1And3,Аналитик данных,ТОО Азамат
+138020957,included,,,se,,between1And3,PHP-разработчик,Гос. корп. Некоммерческое акционерное общество Торайгыров университет
+138021943,included,,,se,,noExperience,NET Trainee,Andersen
+138028293,excluded,experience_unclear,,,,between1And3,Аналитик,ТОО Бэнк Софт Системс
+138035788,included,,,bda,,between1And3,"Специалист (по анализу, отчетности и планированию)",ТОО Востокцветмет
+138036503,excluded,experience_too_high,от 2 лет,,,between1And3,Системный администратор,ТОО КМК- Group Corporation
+138038903,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО NovaArtStroy
+138040077,included,,,se,,between1And3,Разработчик (junior/middle),ТОО Кайнар-Медиа
+138044619,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,ИТ-специалист,АО Home Credit Bank (ДБ АО «ForteBank»)
+138044734,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,ИТ-специалист,АО Home Credit Bank (ДБ АО «ForteBank»)
+138053220,included,,,se,,between1And3,Backend-разработчик,ТОО Jana tolqin
+138053970,excluded,experience_unclear,,,,between1And3,Data analyst,АО Bereke Bank - ИТ-специалисты
+138054641,excluded,experience_too_high,от 2 лет,,,between1And3,Системный администратор,ТОО AQSARAIM
+138057461,included,,,se,,between1And3,QA Engineer,Kaspi.kz
+138057684,included,,,se,,noExperience,Backend-разработчик,ТОО Розовая пантера
+138064195,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО BInTech
+138065608,included,,,se,,between1And3,Junior QA Engineer (Manual),ТОО Playrix
+138067284,excluded,experience_unclear,,,,between1And3,Инженер по телекоммуникациям,ТОО Aristone Technologies Со (Аристон Технолоджис Ко)
+138087761,excluded,experience_unclear,,,,between1And3,Инженер по AI-автоматизации и интеграциям (Python / n8n / AI Agents),"Мы — международная компания, работающая в сфере торговли сельскохозяйственной продукцией, логистики и переработки зерна. Компания ведёт деятельность в"
+138100989,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Сервисный инженер,ТОО Med365
+138101719,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Специалист по маркировке,"ТОО Интертоп Центральная Азия ,ТМ (INTERTOP)"
+138103186,excluded,experience_unclear,,,,between1And3,Разработчик программного обеспечения,ТОО АПРО
+138105465,excluded,experience_too_high,от 2 лет,,,between1And3,"Backend-разработчик (NestJS, FastAPI)",ТОО SofiaGlobal
+138110706,included,,,cyber,поддержк,between1And3,Инженер второй линии технической поддержки/Системный администратор,ТОО X NET
+138119429,included,,,se,,noExperience,Software QA Engineer/Intern (AI-Powered),ТОО Талисман качества
+138123452,included,,,cyber,,between1And3,Помощник системного администратора,ИП MECHANIC
+138125291,excluded,experience_unclear,,,,between1And3,Data Engineer,Kaspi.kz
+138127962,excluded,experience_unclear,,,,between1And3,Аналитик данных,АО Страховая компания Freedom Insurance
+138128051,excluded,experience_unclear,,,,between1And3,Data analyst в команду Computer Vision,Kaspi.kz
+138128403,excluded,experience_unclear,,,,between1And3,Fullstack Developer,ТОО SOLID GROUP (Солид Груп)
+138128500,excluded,experience_unclear,,,,between1And3,Продуктовый аналитик,Kaspi.kz
+138129627,excluded,experience_unclear,,,,between1And3,Инженер по информационной безопасности (Security Engineer),"ТОО Abris Distribution Kazakhstan, Филиал Компании в Казахстане"
+138143922,excluded,experience_too_high,от 3 лет,,,between1And3,Инженер-системотехник,ТОО Аманат
+138149881,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 1, ""se"": 0}",,,between1And3,Специалист по учету и управлению многооборотной тары,ТОО ПЕРВЫЙ ПИВЗАВОД
+138150622,included,,,se,,noExperience,Стажер-разработчик,ТОО Prime Source
+138153864,included,,,se,,between1And3,Младший QA специалист,ТОО Grand era
+138168315,excluded,experience_unclear,,,,between1And3,DWDM Engineer,ТОО Хуавей Текнолоджиз Казахстан
+138170531,excluded,experience_unclear,,,,between1And3,Специалист по информационной безопасности,Некоммерческое акционерное общество Алматинский университет энергетики и связи имени Гумарбека Даукеева
+138172678,excluded,experience_unclear,,,,between1And3,Специалист по управлению данными (Data Governance),АО Home Credit Bank (ДБ АО «ForteBank»)
+138187557,included,,,se,,between1And3,Ruby on Rails Junior+/Middle Developer,Itransition
+138193529,included,,,cyber,,between1And3,Администратор баз данных,АО Банк ЦентрКредит
+138194878,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Специалист в Коммерческий департамент,ТОО MAGNUM. Коммерция/Коммерция
+138196203,excluded,experience_unclear,,,,between1And3,Тестировщик (QA Engineer),ТОО «Научно-Исследовательская Лаборатория «Гамма Технологии»
+138197986,excluded,experience_unclear,,,,between1And3,Аналитик-программист Java script,ТОО Ипсос
+138198959,excluded,experience_unclear,,,,between1And3,AI - Workshop Leader,Alem.ai Foundation
+138200775,excluded,experience_unclear,,,,between1And3,Backend-разработчик,ТОО IDOCSKZ
+138206381,excluded,experience_unclear,,,,between1And3,QA-инженер (Manual + Automation),ТОО AyaHealth
+138207951,excluded,experience_too_high,не менее 3 лет,,,between1And3,"Инженер службы охраны труда, надежности и чрезвычайных ситуаций",ТОО Межрегионэнерготранзит
+138210716,included,,,bda,,between1And3,Data Analyst со знанием японского языка,ТОО БИЛАБС
+138213414,excluded,experience_unclear,,,,between1And3,Cистемный администратор,ЧК Revox Ltd.
+138213739,excluded,experience_unclear,,,,between1And3,Cистемный администратор,ЧК Revox Ltd.
+138213740,excluded,experience_unclear,,,,between1And3,Cистемный администратор,ЧК Revox Ltd.
+138213741,excluded,experience_unclear,,,,between1And3,Cистемный администратор,ЧК Revox Ltd.
+138213875,excluded,experience_unclear,,,,between1And3,Cистемный администратор,ЧК Revox Ltd.
+138213876,excluded,experience_unclear,,,,between1And3,Cистемный администратор,ЧК Revox Ltd.
+138214709,excluded,experience_unclear,,,,between1And3,Cистемный администратор,ЧК Revox Ltd.
+138216345,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО TAUDI
+138217537,included,,,se,,between1And3,Инженер-программист,ТОО Dynamics Scientific
+138220396,excluded,experience_unclear,,,,between1And3,QA-инженер (AI / Automation),АО Банк ЦентрКредит
+138233739,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Специалист по вопросам борьбы с вредителями,ТОО ORKIN
+138239646,excluded,experience_unclear,,,,between1And3,Инженер по тестированию ПО,ТОО Webkassa Development
+138240629,excluded,experience_too_high,от 2 лет,,,between1And3,Веб-разработчик / Web-coder,ТОО today.travel UK
+138242312,excluded,experience_unclear,,,,between1And3,Fullstack Developer (React / Spring / C++),ТОО WSE
+138244250,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО Etalon Auto
+138248754,included,,,bda,support,between1And3,Support Data Engineer,ТОО FUN&SUN
+138253921,included,,,se,,noExperience,JavaScript Trainee,Andersen
+138258657,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Инженер / Технический специалист,ТОО Строительный двор и К
+138263246,excluded,experience_too_high,от 2 лет,,,between1And3,Эксперт по сопровождению информационной безопасности,ТОО Freedom Holding Operations
+138264310,included,,,se,,noExperience,QA Manual Trainee,Andersen
+138264738,excluded,duplicate,,se,,noExperience,QA Manual Trainee,Andersen
+138264761,included,,,se,,noExperience,.NET Trainee,Andersen
+138268346,excluded,experience_unclear,,,,between1And3,Специалист по ИТ и ИБ рискам,Kaspi.kz
+138274068,excluded,experience_unclear,,,,between1And3,NLP Engineer,Kaspi.kz
+138276990,included,,,se,,noExperience,Full Stack Test Engineer Trainee,Andersen
+138277048,excluded,duplicate,,se,,noExperience,JavaScript Trainee,Andersen
+138279652,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Специалист по вопросам борьбы с вредителями,ТОО ORKIN
+138279859,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Технический специалист,Sulpak
+138280483,included,,,se,,between1And3,Тестовик,ИП Маркет
+138287476,excluded,experience_too_high,от 2 лет,,,between1And3,Splunk Administrator / Anti-Fraud Implementation Engineer (Junior / Middle),ТОО SYM TECHNOLOGY
+138288057,excluded,experience_unclear,,,,between1And3,Финансовый аналитик,АО «ФИНАНСОВЫЙ ХОЛДИНГ «РЕСПУБЛИКА»
+138291954,excluded,experience_unclear,,,,between1And3,Системный администратор (специалист help-desk),ТОО ASTER Автомобили
+138297617,included,,,se,,noExperience,QA Automation Trainee,Andersen
+138317158,excluded,duplicate,,se,,noExperience,QA Automation Trainee,Andersen
+138321122,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО Си-Джи-Эф Эйч-Кью
+138321363,excluded,experience_unclear,,,,between1And3,IT-специалист,ТОО Trust Technologies
+138347788,included,,,se,,noExperience,Quality Assurance Trainee Program,Andersen
+138348506,excluded,experience_unclear,,,,between1And3,Специалист по реагированию на инциденты ИБ,АО Группа компаний Аллюр. Управляющая компания
+138351439,included,,,se,,noExperience,Test Engineer Trainee,Andersen
+138353584,excluded,experience_unclear,,,,between1And3,Финтех-аналитик (FinTech Analyst),ТОО AG Corparation
+138357024,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Технический специалист,ТОО Aktobe Trade-Company
+138358640,excluded,experience_unclear,,,,between1And3,Help-Desk специалист,АО Kolesa (АО Колеса)
+138359375,excluded,experience_unclear,,,,between1And3,Unity разработчик (VR),ТОО Деловые информационные системы Казахстан
+138368730,excluded,experience_unclear,,,,between1And3,"Presale Engineer VAD (Juniper, Aruba, Fortinet)",ТОО Elcore Distribution KZ  (Элкор Дистрибьюшн КЗ)
+138404387,excluded,experience_unclear,,,,between1And3,Software Project Coordinator,Учреждение SDU University
+138405402,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Технический специалист (IT),ТОО Takurra
+138406096,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО Альфиор Казахстан
+138406397,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Инженер по радиооборудованию,ТОО Access Point
+138406597,excluded,experience_too_high,от 2 лет,,,between1And3,Аналитик ЗПП,АО Aitas KZ
+138407139,included,,,cyber,,between1And3,Системный администратор,ТОО Новые Технологии Тараз
+138407596,included,,,bda,,between1And3,Аналитик,АО Aitas KZ
+138409522,excluded,experience_unclear,,,,between1And3,Специалист по планированию,ТОО EHS Machinery
+138410033,excluded,no_requirements,,,,between1And3,Аналитик данных,ТОО ТОО Zhiger trade
+138420133,excluded,experience_too_high,от 2 лет,,,between1And3,Oracle plsql разработчик,АО Халык-Life
+138421467,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Специалист IT/Системотехник,ТОО Logitex
+138430760,excluded,experience_unclear,,,,between1And3,IT-специалист по сопровождению Webitel и телефонии контакт-центра,ТОО МФО Credit365 Kazakhstan (Кредит 365 Казахстан)
+138432010,included,,,cyber,,between1And3,Системный администратор,ТОО Заман
+138433885,included,,,cyber,,between1And3,Системный администратор,ТОО Parametric (Параметрик)
+138434839,excluded,experience_unclear,,,,between1And3,"Специалист по IT (Сборка компьютеров, ноутбук, моноблок, кастомные сборки,СЕРВЕРА)",ТОО Kazakh partner
+138434857,excluded,unassigned_role,"{""cyber"": 1, ""bda"": 0, ""se"": 0}",,,between1And3,Системотехник/IT-Специалист,ТОО Proxymo
+138438655,excluded,experience_unclear,,,,between1And3,Аналитик по маркетплейсам,ТОО ТМ Меломан Home Video
+138440765,included,,,bda,,noExperience,Data Labeling Intern — Computer Vision / AI,ТОО Biometric(Биометрик)
+138445452,excluded,experience_unclear,,,devops,between1And3,DevOps / SysAdmin,ТОО Аврора Сервис
+138456935,included,,,se,,noExperience,Стажер QA (Manual Testing),ТОО Freedom Media
+138457522,excluded,experience_unclear,,,,between1And3,Специалист по пожарной сигнализации и СКУД,ТОО Tsunami Engineering
+138457985,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Специалист по проектам,"ФудМастер, ТМ"
+138460193,excluded,no_requirements,,,,noExperience,Специалист по обслуживанию компьютерной техники,ИП СК-Тема
+138460363,included,,,cyber,,between1And3,Системный администратор,ТОО Новые технологии- Астана
+138461807,excluded,experience_unclear,,,,between1And3,"Специалист по охране труда и обеспечению безопасности (ТБ, ЧС, ПБ)",АО ALT Университет имени Мухамеджана Тынышпаева
+138463125,excluded,experience_unclear,,,,between1And3,Разработчик платежных решений,"AIR ASTANA, АО"
+138477991,included,,,se,,between1And3,Тестировщик,ТОО Ibsotech
+138478630,excluded,experience_unclear,,,,between1And3,IT специалист,ТОО Continental Logistics
+138480271,excluded,experience_unclear,,,,between1And3,BI-разработчик (аутстаффинг),АО Аграрная кредитная корпорация
+138481202,excluded,experience_unclear,,,,between1And3,Инженер-программист роботов (C++ / ROS2 / Robotics Software Engineer),ТОО Казахстанские Трубопроводные системы
+138481297,excluded,experience_unclear,,,,between1And3,Инженер-программист робототехники (ROS2 / Python / C++),ТОО Казахстанские Трубопроводные системы
+138485704,included,,,cyber,,between1And3,Системный администратор (Семей),АО KMF Банк
+138493628,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 1}",,,between1And3,Customer Solutions Engineer (Junior),ТОО Documentolog
+138497301,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Специалист по обработке заказов,ТОО Аксай-Нан ХБК
+138499400,excluded,experience_unclear,,,,between1And3,Сетевой инженер,ТОО Digital Security
+138500886,included,,,bda,,between1And3,Младший ИИ инженер,ТОО Phaeton.KZ
+138501695,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 1, ""se"": 0}",,,noExperience,Младший специалист по дистрибуции (офис),Sulpak
+138502096,excluded,experience_too_high,от 3 лет,,,between1And3,Системный администратор (Linux),ТОО NLS Kazakhstan
+138505200,included,,,cyber,,between1And3,Системный администратор,АО КСЖ Standard Life
+138508146,excluded,experience_unclear,,,,between1And3,"Специалист по внедрению ИИ (AI), аналитика и базы данных",ТОО Студия 40
+138513074,excluded,experience_unclear,,,,between1And3,Инженер-программист станков с ЧПУ,ТОО ПетроМашЗавод
+138514563,included,,,cyber,,between1And3,Системный администратор,ТОО Арида-Софт
+138515220,excluded,experience_unclear,,,,between1And3,Администратор базы данных Maxtrax (QAQC),ТОО Innovative Well Solutions
+138516324,excluded,experience_unclear,,,,between1And3,Системный администратор-Водитель,АО Нефтяная страховая компания
+138517799,excluded,experience_too_high,от 2 лет,,,between1And3,BI-разработчик (Power BI),ТОО Elite Business Group
+138519767,included,,,se,,noExperience,Web-разработчик / IT-специалист,ТОО Delta Consulting Group
+138523866,excluded,experience_unclear,,,,between1And3,Golang-разработчик,ТОО Аврора Сервис
+138528794,excluded,experience_unclear,,,,between1And3,Специалист по прикладному ИИ / Applied AI Specialis,ИП Ally- Power Капранчик Е.А.
+138528973,included,,,cyber,поддержк,between1And3,Специалист технической поддержки / Помощник системного администратора,ТОО Big Business Consulting
+138531491,excluded,experience_unclear,,,,between1And3,Data Analyst,Kaspi.kz
+138531623,excluded,experience_unclear,,,,between1And3,Разработчик Python,ТОО IT-TRY
+138538889,included,,,cyber,,noExperience,Специалист (направление: аналитика),АО Государственная техническая служба
+138540609,excluded,experience_unclear,,,,between1And3,IT-специалист в горнолыжный курорт,ТОО Smart strategies and development
+138542062,excluded,experience_unclear,,,,between1And3,Системный инженер,ТОО Аврора Сервис
+138543939,excluded,experience_unclear,,,,between1And3,IT-специалист,ТОО INCORE GROUP
+138546528,excluded,experience_unclear,,,,between1And3,AI/ML инженер,АО Центр медицинских технологий и информационных систем
+138550704,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 1}",,,between1And3,Специалист IT/Системотехник,ТОО Logitex
+138559681,excluded,experience_too_high,от 2 лет,,поддержк,between1And3,Специалист по поддержке и внедрению IT-продукта (Support & QA),ТОО Paloma365
+138564219,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Младший специалист,ТОО Техинвест проект
+138579725,included,,,cyber,,between1And3,Системный администратор,ТОО Тамерлан Моторс
+138581032,excluded,experience_too_high,от 3 лет,,support,between1And3,Support Backend Developer (PHP/Laravel),ООО Точка Роста
+138586893,excluded,unassigned_role,"{""cyber"": 1, ""bda"": 0, ""se"": 0}",,,between1And3,Инженер мониторинга сети,ТОО НПО ПЕРСПЕКТИВА
+138587807,included,,,cyber,,between1And3,Младший системный и сетевой инженер,ТОО QData
+138588985,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Аналитик в Отдел кредитования (МСБ),АО Alatau City Bank
+138589027,included,,,cyber,,between1And3,Cybersecurity Expert,ТОО KPMG
+138595609,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО Фаворит Секьюрити
+138595717,excluded,experience_unclear,,,,between1And3,Fullstack Software Engineer,ТОО HJ Platform (Hero’s Journey)
+138596342,included,,,se,,noExperience,Специалист по вайб-кодингу (Vibe Coding Specialist),ТОО OXFLO
+138596793,excluded,experience_unclear,,,,between1And3,Системный администратор,ИП Жасмин
+138597304,excluded,experience_unclear,,,,between1And3,"QA-Инженер (Тестировщик программного обеспечения, Мануальное тестирование)",ТОО SUCCESS INITIATIVE GROUP(SIG)
+138600566,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО ГРК МЛД
+138606103,excluded,experience_too_high,от 2 лет,,,between1And3,Продуктовый аналитик / Product Analyst,Mechta.kz TM ( ТОО Мечта Маркет )
+138608623,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Аналитик OFF LINE,ТОО Мир Инструмента Алматы
+138610650,excluded,experience_too_high,от 3-х лет,,,between1And3,"Специалист ОТ и ПБ, г. Житикара",ТОО AMS-Kazakhstan ( AV GROUP)
+138611673,excluded,experience_unclear,,,,between1And3,Java-разработчик,АО ForteBank
+138612376,excluded,unassigned_role,"{""cyber"": 1, ""bda"": 0, ""se"": 0}",,,between1And3,Системотехник/IT-Специалист,ТОО Proxymo
+138627930,excluded,experience_too_high,от 2 лет,,,between1And3,"Fullstack-разработчик (Next.js, TypeScript)",ИП Ильясова
+138627948,excluded,experience_too_high,2+ years,,,between1And3,QA Engineer in Almaty,Andersen
+138637282,excluded,experience_too_high,не менее 3 лет,,,between1And3,Разработчик,BI Group. BI Development
+138643853,excluded,experience_too_high,не менее 3 лет,,,between1And3,Системный инженер,ТОО Петропавловские Тепловые Сети
+138644508,excluded,experience_too_high,at least 3 years,,,between1And3,Equity Research Analyst,Публичная Компания «Freedom Finance Global PLC»
+138646147,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Технический специалист по работе с проектными организациями,ПЕНОПЛЭКС
+138653627,excluded,experience_unclear,,,,between1And3,Инженер по охране труда и технике безопасности (со знанием китайского / английского языка),ТОО Энергия Семиречья
+138653810,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО Центр Микрохирургии Глаза
+138661152,excluded,experience_unclear,,,,between1And3,Системотехник/IT-Специалист,ТОО Proxymo
+138662672,excluded,duplicate,,cyber,,between1And3,Cybersecurity Expert,ТОО KPMG
+138664244,excluded,experience_unclear,,,,between1And3,Аналитик Bitrix24,АО Группа компаний Аллюр. Управляющая компания
+138664264,excluded,experience_unclear,,,,between1And3,Аналитик SOC/L1 (ИБ),"Beeline, ТМ"
+138674114,excluded,experience_too_high,3 years of experience,,,between1And3,Commercial & Pricing Analyst,ТОО Emerging Travel Group
+138674347,excluded,experience_too_high,от 2 лет,,,between1And3,QA Automation Engineer (Gamedev),TownLive Games
+138686803,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 1}",,,between1And3,"Специалист по внедрению и интеграциям (CRM, API, автоматизация)",ТОО Mobilesecurity.kz
+138688925,excluded,experience_too_high,не менее 2-х лет,,,between1And3,Системный администратор,АО KMF Банк
+138690224,excluded,experience_unclear,,,,between1And3,PHP Developer,АО Kcell
+138702021,excluded,duplicate,,se,,noExperience,Quality Assurance Trainee Program,Andersen
+138705725,excluded,experience_unclear,,,,between1And3,IT-специалист,ТОО Оңтүстік-құрылыс сервис
+138708046,excluded,experience_unclear,,,,between1And3,Сетевой администратор,ТОО Aziia-Tech
+138710262,excluded,experience_unclear,,,,between1And3,Помощник программиста,"Казахювелир, АО"
+138711978,included,,,bda,,between1And3,"Junior data scientist, Департамент ИИ и разработки",ТОО QazCloud
+138712121,excluded,experience_too_high,от 2 лет,,,between1And3,Эксперт по аналитике,"Beeline, ТМ"
+138719767,included,,,se,,between1And3,Junior Java Developer,Andersen
+138731366,excluded,experience_unclear,,,,between1And3,Fullstack-разработчик (Laravel / Vue.js / Node.js),АО Qarmet. Сталь
+138731367,excluded,experience_unclear,,,,between1And3,Fullstack-разработчик (Laravel / Vue.js / Node.js),АО Qarmet. Сталь
+138731368,excluded,experience_unclear,,,,between1And3,Fullstack-разработчик (Laravel / Vue.js / Node.js),АО Qarmet. Сталь
+138731587,included,,,se,,between1And3,C#/. NET-разработчик,РГП на ПХВ Инженерно-технический центр Управления Делами Президента Республики Казахстан
+138735106,excluded,experience_unclear,,,,between1And3,Инженер IBM,ТОО ИТ Компьютерс
+138735124,excluded,experience_unclear,,,,between1And3,Тестировщик-автоматизатор,ТОО ЧК FREEDOM LIFESTYLE LTD.
+138735188,excluded,experience_unclear,,,,between1And3,Инженер IBM,ТОО ИТ Компьютерс
+138738408,excluded,experience_unclear,,,,between1And3,QA-инженер,АО Kcell
+138749090,excluded,experience_too_high,at least 2 years,,,between1And3,Data Engineer,Genesis Group AG
+138749646,included,,,cyber,,between1And3,Junior Database Administrator (PostgreSQL),Kaspi.kz
+138750477,excluded,experience_too_high,от 3 лет,,,between1And3,Data analyst (CX - customer experience),"Beeline, ТМ"
+138751847,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО VILED FASHION (ВИЛЕД ФЕШН)
+138755467,excluded,experience_unclear,,,,between1And3,Медиааналитик,ТОО iNFLECTA
+138755975,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Специалист по обработке онлайн-заказов,CAMELLIA FLOWERS ART LLC
+138757649,excluded,duplicate,,se,,noExperience,Software QA Engineer/Intern (AI-Powered),ТОО Талисман качества
+138759015,excluded,experience_unclear,,,,between1And3,Data Engineer / BI Developer,Kaspi.kz
+138759970,excluded,experience_too_high,минимум 2 года,,,between1And3,Аналитик данных в Customer Experience,Kaspi.kz
+138766006,included,,,se,,between1And3,Game Development International Intern,Darktheme Studios
+138771599,excluded,experience_unclear,,,,between1And3,Системный администратор (R-Keeper),ТОО Инфинити Орда
+138773329,included,,,se,,noExperience,Java Trainee,Andersen
+138774215,excluded,experience_too_high,от 2 лет,,,between1And3,Разработчик программного обеспечения управления искусственного интеллекта и цифровых инноваций,НАО КАЗАХСКИЙ НАЦИОНАЛЬНЫЙ ЖЕНСКИЙ ПЕДАГОГИЧЕСКИЙ УНИВЕРСИТЕТ
+138780168,excluded,experience_unclear,,,,between1And3,Специалист испытательной лабораторий,"АО Национальный центр научных исследований, подготовки и обучения в сфере гражданской защиты"
+138784275,excluded,experience_too_high,от 2 лет,,,between1And3,Аналитик (Инфраструктура),Kaspi.kz
+138785188,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО Востоквзрывпром
+138785755,included,,,bda,,noExperience,AI/ML-разработчик (Python)/Стажер,ТОО TrustTech Solutions
+138786306,included,,,se,,noExperience,Backend-разработчик (Java),ТОО TrustTech Solutions
+138786729,excluded,experience_unclear,,,,between1And3,Территориальный Аналитик Colgate-Palmolive,ТОО Prima Distribution
+138789256,excluded,experience_unclear,,,,between1And3,"Специалист по разработке, настройке и внедрению ИИ-агентов",ИП Миловидов
+138790997,excluded,duplicate,,se,,noExperience,Test Engineer Trainee,Andersen
+138793000,excluded,no_requirements,,,,noExperience,Администратор баз данных,ИП WHITE
+138796071,included,,,se,,noExperience,GO Trainee,Andersen
+138811331,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Специалист по техническому обслуживанию,ТОО ORKIN
+138821820,excluded,experience_unclear,,,,between1And3,Специалист по внедрению информационных систем,ТОО НПО ПЕРСПЕКТИВА
+138825325,included,,,se,,between1And3,Тестировщик VR тренажеров Junior/Junior+,ТОО Деловые информационные системы Казахстан
+138840911,excluded,experience_too_high,от 3х лет,,,between1And3,Web Analyst,ТОО Veliora Technologies
+138851942,excluded,duplicate,,se,,noExperience,Software QA Engineer/Intern (AI-Powered),ТОО Талисман качества
+138852671,included,,,cyber,поддержк,between1And3,Системный администратор / Специалист технической поддержки (офис),"585, Золотой"
+138855360,included,,,se,,between1And3,Fullstack-разработчик,ИП Salem
+138861113,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Сервисный инженер,ТОО Neo Service
+138861169,excluded,experience_unclear,,,,between1And3,Сервисный инженер,ТОО Neo Service
+138869102,excluded,experience_unclear,,,,between1And3,Тестировщик,АО Народный банк Казахстана. IT
+138871829,included,,,se,,noExperience,IOS Trainee,Andersen
+138872040,excluded,experience_unclear,,,,between1And3,Backend-разработчик (PHP / Python / Node.js),ТОО Sotikon
+138873089,excluded,unassigned_role,"{""cyber"": 1, ""bda"": 0, ""se"": 1}",,,between1And3,IT Специалист по автоматизации бизнеса,ТОО ЦАТ IDSOFT
+138874056,excluded,experience_unclear,,,,between1And3,Системный администратор,"Варваринское, ТОО"
+138874480,excluded,duplicate,,se,,noExperience,IOS Trainee,Andersen
+138877649,included,,,se,,noExperience,Android Trainee,Andersen
+138878388,excluded,experience_unclear,,,,between1And3,Инженер отдела сетей передачи данных,ТОО SMARTNET
+138879721,excluded,experience_unclear,,,,between1And3,Data Scientist,ТОО Parametric (Параметрик)
+138882608,excluded,experience_too_high,от 2 лет,,,between1And3,QA-инженер,ТОО Людмила-KZ TM Аян
+138883905,excluded,experience_unclear,,,,between1And3,Системный администратор,"ASTEL, АО"
+138887345,excluded,experience_unclear,,,,between1And3,Fullstack-разработчик (Java + Angular),ТОО IT SPACE
+138888537,excluded,duplicate,,se,,noExperience,Android Trainee,Andersen
+138890980,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Технический специалист (IT),Sulpak
+138891654,included,,,cyber,,between1And3,AppSec инженер (Эксперт по безопасной разработке),АО Bereke Bank - ИТ-специалисты
+138894205,excluded,experience_too_high,от 2 лет,,,between1And3,ML Engineer,Kaspi.kz
+138905277,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Специалист по пищевой безопасности,ТОО Star Brands Asia (Стар Брэндс Азия)
+138909087,excluded,experience_too_high,от 2 лет,,,between1And3,Инженер по информационной безопасности,"ТОО EUROPHARMA, ТМ (ТОО AK NIET GROUP)"
+138910075,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Жеке көмекші / IT жобалар үйлестірушісі,ТОО Branch of Digsview LLC
+138918664,excluded,experience_unclear,,,,between1And3,Сетевой инженер / Инженер по сетевой безопасности (Check Point),ТОО SafeNetra Systems
+138920613,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,noExperience,Специалист по обслуживанию Центр онлайн обслуживания,АО Казахтелеком
+138922292,excluded,experience_unclear,,,,between1And3,C#/.NET-разработчик,ТОО Mplat
+138925010,excluded,experience_unclear,,,,between1And3,QA engineer (Kaspi Travel),Kaspi.kz
+138926788,excluded,experience_too_high,от 3х лет,,,between1And3,Программист РНР,ТОО CAPITAL NETWORK
+138928130,included,,,bda,,between1And3,Data Engineer,ТОО Сентрас Капитал
+138939104,excluded,unassigned_role,"{""cyber"": 1, ""bda"": 0, ""se"": 0}",,,between1And3,Специалист по IT (с автомобилем),ТОО GT oil service
+138955174,excluded,experience_unclear,,,,between1And3,Data Engineer в Fintech,ТОО Globerce Inc.
+138961121,excluded,experience_too_high,5+ years,,,between1And3,Junior Android Developer,Andersen
+138961656,excluded,experience_unclear,,,,between1And3,Системный администратор Linux с сертификатом RHCSA,ТОО Halyq Soft
+138970606,excluded,experience_too_high,от 2 лет,,поддержк,between1And3,Системный администратор / Инженер технической поддержки (2-я линия),ТОО VMR Group
+138972026,excluded,experience_unclear,,,,between1And3,"Java-разработчик (BPM, системы принятия решений) Департамент кредитных рисков",АО Alatau City Bank
+138972539,excluded,experience_unclear,,,,between1And3,Системный администратор,ТОО Компания TROYA
+138974563,included,,,cyber,,between1And3,Системный администратор / System Administrator,ТОО КОЛЛЕКТОРСКОЕ АГЕНТСТВО ID COLLECT (АЙДИ КОЛЛЕКТ)
+138975907,excluded,experience_unclear,,,,between1And3,Программист,АО Казахтелеком
+138978369,excluded,experience_unclear,,,,between1And3,Python-разработчик,ТОО WOOPPAY
+138978399,excluded,unassigned_role,"{""cyber"": 1, ""bda"": 0, ""se"": 0}",,,between1And3,Младший IT - специалист,ТОО Бомонд групп
+138985403,excluded,experience_unclear,,,,between1And3,Тестировщика VR и MR тренажеров,ТОО Деловые информационные системы Казахстан
+138991244,excluded,experience_too_high,не менее 3 лет,,,between1And3,Инженер ИТ-инфраструктуры,ТОО МК-Золото ломбард
+138991624,excluded,experience_too_high,от 2 лет,,,between1And3,Fullstack-разработчик,ТОО SHARP.KZ
+138993985,excluded,experience_too_high,от 2 лет,,,between1And3,"Python Backend-разработчик (Django, AI/LLM)",Частная компания Relitalk Ltd.
+138994929,excluded,unassigned_role,"{""cyber"": 0, ""bda"": 0, ""se"": 0}",,,between1And3,Выездной специалист,ТОО А2ПАРТНЕРС
+138995355,excluded,experience_unclear,,,,between1And3,Infrastructure Engineer,ТОО BTS Digital
+138996029,included,,,se,,between1And3,Junior/Middle backend-разработчик Python (Django),Kaspi.kz
+138996720,excluded,experience_unclear,,,,between1And3,Серверный инженер / Инженер по подбору IT-оборудования,ТОО Millennials
+138998112,excluded,experience_unclear,,,,between1And3,Аналитик данных/BI-аналитик отдела контроля СВХ,ТОО Digital Silk Road Company
+139000710,included,,,se,,between1And3,C#/.NET-разработчик,АО Центр медицинских технологий и информационных систем

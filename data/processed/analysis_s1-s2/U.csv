@@ -1,0 +1,7 @@
+﻿programme,scenario,n,U,ci_lo,ci_hi,H1_lower_gt_0.30,covered_categories,bootstrap_B,seed
+se,strict,38,0.2705,0.2161,0.3204,no,9,2000,20261030
+se,soft,38,0.1932,0.1429,0.24,no,11,2000,20261030
+cyber,strict,19,0.1392,0.0482,0.2445,no,11,2000,20261030
+cyber,soft,19,0.1013,0.0286,0.1852,no,12,2000,20261030
+bda,strict,11,0.3962,0.2791,0.4808,no,8,2000,20261030
+bda,soft,11,0.3396,0.1999,0.434,no,10,2000,20261030

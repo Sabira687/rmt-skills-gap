@@ -1,0 +1,7 @@
+﻿er,condition,observed,verdict_computed
+ER1,SE has the largest number of vacancies,"SE 38, Cyber 19, BDA 11",confirmed
+ER2,U strict <= 50% for every programme,se 0.271; cyber 0.139; bda 0.396,confirmed
+ER3,lower bound of 95% bootstrap interval of U strict > 30% for every programme,"se [0.216, 0.320]; cyber [0.048, 0.244]; bda [0.279, 0.481]",not confirmed
+ER4,|U strict| differs by more than 10 pp for at least one pair,se-cyber 13.1 pp; se-bda 12.6 pp; cyber-bda 25.7 pp,confirmed
+ER5,U strict is at least 10 pp higher than U soft for every programme,se 7.7 pp; cyber 3.8 pp; bda 5.7 pp,not confirmed
+ER6,at least two of the top-3 SE gap categories are rapidly evolving,top-3: Version Control; Machine Learning and Deep Learning [rapid]; Mobile Development [rapid],confirmed

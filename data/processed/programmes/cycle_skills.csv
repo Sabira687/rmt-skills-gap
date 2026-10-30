@@ -1,0 +1,15 @@
+﻿programme,cycle,status,source_pages,words,c01,c02,c03,c04,c05,c06,c07,c08,c09,c10,c11,c12,c13,c14,c15,c16,c17,c18,c19,n_categories
+Software Engineering,Cycle of general education disciplines - Compulsory component / University's component (Elective component),mandatory,14-21,822,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,5
+Software Engineering,Cycle of basic disciplines - University's component,mandatory,21-29,817,1,1,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,6
+Software Engineering,Cycle of basic disciplines - Elective component,elective,29-32,368,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,5
+Software Engineering,Cycle of profiling disciplines - University's component,mandatory,32-36,381,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,5
+Software Engineering,Cycle of profiling disciplines - Elective component,elective,36-47,1227,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,4
+Cybersecurity,Cycle of general education disciplines - Compulsory component / University’s component (Elective component),mandatory,17-32,831,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cybersecurity,Cycle of fundamental disciplines - University’s component,mandatory,32-59,1468,1,0,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,11
+Cybersecurity,Cycle of major disciplines - University’s component,mandatory,59-72,635,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,1,1,0,1,7
+Cybersecurity,Cycle of major disciplines - Elective component,elective,72-84,699,1,0,0,0,1,0,0,0,1,0,0,1,0,1,1,1,1,1,0,9
+Big Data Analysis,Cycle of general education disciplines - Compulsory component / Elective component,mandatory,14-25,1093,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Big Data Analysis,Cycle of fundamental disciplines - University’s component,mandatory,25-33,824,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,4
+Big Data Analysis,Cycle of fundamental disciplines - Elective component,elective,33-36,365,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,5
+Big Data Analysis,Cycle of major disciplines - University’s component,mandatory,36-45,950,1,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,0,1,7
+Big Data Analysis,Cycle of major disciplines - Elective component,elective,45-58,1428,1,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,0,0,8
