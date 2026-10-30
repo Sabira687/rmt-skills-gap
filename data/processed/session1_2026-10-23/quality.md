@@ -1,8 +1,8 @@
 # Data quality report
 
-Generated: 2026-10-25 16:45 · rules: `v1-frozen-2026-10-25`
+Generated: 2026-10-30 16:55 · rules: `v1-frozen-2026-10-25`
 
-Inputs: data/raw/vacancies/session1_2026-10-23/hh_cards_2026-10-25-09-39.json, _private/session1_2026-10-23/hh_full_2026-10-25-11-00.json, _private/session1_2026-10-23/hh_full_2026-10-25-11-14.json
+Inputs: data/raw/vacancies/session1_2026-10-23/hh_cards_2026-10-25-09-39.json, _private/session1_2026-10-23/hh_full_2026-10-25-11-14.json, _private/session1_2026-10-23/hh_full_2026-10-25-11-00.json
 
 ## T10 data-quality shares
 
@@ -14,8 +14,8 @@ Inputs: data/raw/vacancies/session1_2026-10-23/hh_cards_2026-10-25-09-39.json, _
 | duplicates | duplicates removed / included before deduplication | 9 | 68 | 13.2% | 5%-10% | above expected range |
 | empty_key_skills | final vacancies with an empty 'Key skills' field / final vacancies | 18 | 59 | 30.5% | 25%-35% | within expected range |
 | unassigned_proxy | collected candidates whose programme could not be assigned / collected candidates (proxy for role mismatch, no expectation declared) | 37 | 287 | 12.9% | - | - |
-| role_mismatch | accuracy-check candidates (included or excluded on full text) where the hh role does not match the text / judged candidates | 1 | 20 | 5.0% | 10%-15% | below expected range |
-| role_mismatch_all_checked | all accuracy-check vacancies where the hh role does not match the text / all judged (stratified sample, not representative; no expectation declared) | 6 | 30 | 20.0% | - | - |
+| role_mismatch | accuracy-check candidates (included or excluded on full text) where the hh role does not match the text / judged candidates | 0 | 20 | 0.0% | 10%-15% | below expected range |
+| role_mismatch_all_checked | all accuracy-check vacancies where the hh role does not match the text / all judged (stratified sample, not representative; no expectation declared) | 4 | 30 | 13.3% | - | - |
 
 ## Cleaning log (E.3)
 
