@@ -60,7 +60,8 @@ def fig_funnel(sessions, combined, out):
     ax.set_xticks(list(x) + [len(labels)])
     ax.set_xticklabels(labels + ["Combined"])
     ax.set_ylabel("Vacancies")
-    ax.legend(frameon=False)
+    ax.set_ylim(0, 950)
+    ax.legend(frameon=False, loc="upper right")
     save(fig, out, "A4_Fig01_selection_funnel.png")
 
 
@@ -135,7 +136,7 @@ def fig_u(an, out):
 
 def fig_gaps(an, out):
     g = read(os.path.join(an, "G.csv"))
-    fig, axes = plt.subplots(1, 3, figsize=(10, 3.8), sharex=True)
+    fig, axes = plt.subplots(1, 3, figsize=(13, 3.8), sharex=True)
     for ax, k in zip(axes, KEYS):
         rows = sorted([r for r in g if r["programme"] == k], key=lambda r: -float(r["G_strict"]))[:8]
         ax.barh([SHORT[int(r["category_id"])] for r in rows][::-1], [float(r["G_strict"]) for r in rows][::-1], color=COLOR[k])
@@ -146,13 +147,13 @@ def fig_gaps(an, out):
 
 def fig_stability(an, out):
     s = read(os.path.join(an, "rank_stability.csv"))
-    fig, axes = plt.subplots(1, 3, figsize=(10, 3.8), sharex=True)
+    fig, axes = plt.subplots(1, 3, figsize=(13, 3.8), sharex=True)
     for ax, k in zip(axes, KEYS):
         rows = sorted([r for r in s if r["programme"] == k], key=lambda r: -float(r["top3_frequency"]))[:6]
         ax.barh([SHORT[int(r["category_id"])] for r in rows][::-1], [float(r["top3_frequency"]) for r in rows][::-1], color=COLOR[k])
         ax.set_xlim(0, 1)
         ax.set_title(LABEL[k], fontsize=9)
-        ax.set_xlabel("Share of 2000 bootstrap samples in top-3 by G_c")
+        ax.set_xlabel("Share of bootstrap samples with\nthe category in top-3 by G_c")
     save(fig, out, "A4_Fig07_ranking_stability.png")
 
 

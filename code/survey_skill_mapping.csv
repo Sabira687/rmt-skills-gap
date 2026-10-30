@@ -1,0 +1,7 @@
+survey_skill,taxonomy_category,dictionary_rows,rationale
+Programming Fundamentals,1 Programming Languages,1:programming languages|1:programming fundamentals,"Languages plus fundamentals (programming, OOP, algorithms, data structures); the dictionary keeps them in category 1"
+Databases/SQL,5 Databases and SQL,5:sql and databases|5:databases generic,Same wording as the survey item
+Git/Version Control,10 Version Control,10:version control|10:version control generic,Same wording as the survey item
+REST APIs,3 Backend Frameworks and APIs (part),3:apis|3:services,"Only the API and service rows of category 3; the category also holds backend frameworks, which belong to the next row"
+Frameworks,2 Frontend Development and 3 Backend Frameworks and APIs (part),2:frontend|2:markup|3:backend frameworks,"Framework names on the front end and the back end; the survey item does not say which side, so both are used"
+Docker/DevOps,9 Cloud Containers and CI/CD,9:cloud and containers|9:cloud generic,"Broader than the survey item: the category also holds cloud providers, CI/CD and infrastructure as code"

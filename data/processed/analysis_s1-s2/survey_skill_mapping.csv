@@ -1,0 +1,7 @@
+﻿survey_skill,taxonomy_category,D_pooled,n_pooled,D_se,C_strict_se,C_soft_se,G_strict_se,D_cyber,C_strict_cyber,C_soft_cyber,G_strict_cyber,D_bda,C_strict_bda,C_soft_bda,G_strict_bda
+Programming Fundamentals,1 Programming Languages,0.6176,68,0.8421,1,1,0.0,0.1579,1,1,0.0,0.6364,1,1,0.0
+Databases/SQL,5 Databases and SQL,0.5882,68,0.6842,1,1,0.0,0.3158,1,1,0.0,0.7273,1,1,0.0
+Git/Version Control,10 Version Control,0.4118,68,0.5263,0,0,0.5263,0.1579,0,0,0.1579,0.4545,0,0,0.4545
+REST APIs,3 Backend Frameworks and APIs (part),0.3971,68,0.6053,0,0,0.6053,0.0,0,0,0.0,0.3636,0,0,0.3636
+Frameworks,2 Frontend Development and 3 Backend Frameworks and APIs (part),0.3235,68,0.5526,1,1,0.0,0.0,0,0,0.0,0.0909,0,0,0.0909
+Docker/DevOps,9 Cloud Containers and CI/CD,0.3382,68,0.3684,1,1,0.0,0.1579,0,1,0.1579,0.5455,0,0,0.5455
