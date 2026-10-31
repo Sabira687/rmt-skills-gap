@@ -1,0 +1,7 @@
+survey_skill,D_pooled,q7_often_always,q8_well_extremely,gap_mean,survey_share_often_always,rank_vacancies,rank_survey
+Programming Fundamentals,0.6176,31,29,0.09,0.969,1.0,1.0
+Databases/SQL,0.5882,29,30,-0.28,0.906,2.0,2.0
+Git/Version Control,0.4118,18,22,-0.16,0.562,3.0,3.0
+REST APIs,0.3971,13,20,-0.41,0.406,4.0,4.0
+Frameworks,0.3235,9,15,-0.47,0.281,6.0,5.0
+Docker/DevOps,0.3382,5,12,-0.5,0.156,5.0,6.0

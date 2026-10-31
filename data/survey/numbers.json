@@ -1,0 +1,530 @@
+{
+ "submissions": 37,
+ "first_ts": "2026/10/24 10:43:22 PM GMT+5",
+ "last_ts": "2026/10/25 1:33:10 AM GMT+5",
+ "eligible": 32,
+ "q2": {
+  "Yes, I have interviewed but have not been hired yet": 19,
+  "Yes, I currently work or intern in IT": 13,
+  "No": 5
+ },
+ "straightline_q8": 3,
+ "dup_rows": 0,
+ "skills": [
+  {
+   "skill": "Programming Fundamentals",
+   "q7_median": 5.0,
+   "q7_often_always": 31,
+   "q8_median": 5.0,
+   "q8_well_extremely": 29,
+   "gap_mean": 0.09,
+   "ci_lo": -0.31,
+   "ci_hi": 0.5,
+   "gap_median": 0.0,
+   "gap_pos": 10,
+   "gap_zero": 13,
+   "gap_neg": 9,
+   "wilcoxon_p": 0.697
+  },
+  {
+   "skill": "Databases/SQL",
+   "q7_median": 4.0,
+   "q7_often_always": 29,
+   "q8_median": 5.0,
+   "q8_well_extremely": 30,
+   "gap_mean": -0.28,
+   "ci_lo": -0.59,
+   "ci_hi": 0.03,
+   "gap_median": 0.0,
+   "gap_pos": 6,
+   "gap_zero": 12,
+   "gap_neg": 14,
+   "wilcoxon_p": 0.098
+  },
+  {
+   "skill": "Git/Version Control",
+   "q7_median": 4.0,
+   "q7_often_always": 18,
+   "q8_median": 4.0,
+   "q8_well_extremely": 22,
+   "gap_mean": -0.16,
+   "ci_lo": -0.5,
+   "ci_hi": 0.19,
+   "gap_median": 0.0,
+   "gap_pos": 8,
+   "gap_zero": 12,
+   "gap_neg": 12,
+   "wilcoxon_p": 0.408
+  },
+  {
+   "skill": "REST APIs",
+   "q7_median": 3.0,
+   "q7_often_always": 13,
+   "q8_median": 4.0,
+   "q8_well_extremely": 20,
+   "gap_mean": -0.41,
+   "ci_lo": -0.81,
+   "ci_hi": 0.0,
+   "gap_median": -0.5,
+   "gap_pos": 7,
+   "gap_zero": 9,
+   "gap_neg": 16,
+   "wilcoxon_p": 0.062
+  },
+  {
+   "skill": "Frameworks",
+   "q7_median": 3.0,
+   "q7_often_always": 9,
+   "q8_median": 3.0,
+   "q8_well_extremely": 15,
+   "gap_mean": -0.47,
+   "ci_lo": -0.91,
+   "ci_hi": -0.03,
+   "gap_median": -0.5,
+   "gap_pos": 6,
+   "gap_zero": 10,
+   "gap_neg": 16,
+   "wilcoxon_p": 0.05
+  },
+  {
+   "skill": "Docker/DevOps",
+   "q7_median": 3.0,
+   "q7_often_always": 5,
+   "q8_median": 3.0,
+   "q8_well_extremely": 12,
+   "gap_mean": -0.5,
+   "ci_lo": -0.81,
+   "ci_hi": -0.16,
+   "gap_median": -0.5,
+   "gap_pos": 4,
+   "gap_zero": 12,
+   "gap_neg": 16,
+   "wilcoxon_p": 0.011
+  }
+ ],
+ "d7": {
+  "Programming Fundamentals": {
+   "Never asked": 0,
+   "Rarely": 1,
+   "Sometimes": 0,
+   "Often": 12,
+   "Always required": 19
+  },
+  "Databases/SQL": {
+   "Never asked": 0,
+   "Rarely": 1,
+   "Sometimes": 2,
+   "Often": 17,
+   "Always required": 12
+  },
+  "Git/Version Control": {
+   "Never asked": 0,
+   "Rarely": 2,
+   "Sometimes": 12,
+   "Often": 14,
+   "Always required": 4
+  },
+  "REST APIs": {
+   "Never asked": 0,
+   "Rarely": 5,
+   "Sometimes": 14,
+   "Often": 9,
+   "Always required": 4
+  },
+  "Frameworks": {
+   "Never asked": 0,
+   "Rarely": 8,
+   "Sometimes": 15,
+   "Often": 9,
+   "Always required": 0
+  },
+  "Docker/DevOps": {
+   "Never asked": 1,
+   "Rarely": 10,
+   "Sometimes": 16,
+   "Often": 4,
+   "Always required": 1
+  }
+ },
+ "d8": {
+  "Programming Fundamentals": {
+   "Not taught": 1,
+   "Poorly": 0,
+   "Moderately": 2,
+   "Well": 10,
+   "Extremely well": 19
+  },
+  "Databases/SQL": {
+   "Not taught": 0,
+   "Poorly": 0,
+   "Moderately": 2,
+   "Well": 11,
+   "Extremely well": 19
+  },
+  "Git/Version Control": {
+   "Not taught": 1,
+   "Poorly": 1,
+   "Moderately": 8,
+   "Well": 16,
+   "Extremely well": 6
+  },
+  "REST APIs": {
+   "Not taught": 0,
+   "Poorly": 2,
+   "Moderately": 10,
+   "Well": 13,
+   "Extremely well": 7
+  },
+  "Frameworks": {
+   "Not taught": 1,
+   "Poorly": 4,
+   "Moderately": 12,
+   "Well": 8,
+   "Extremely well": 7
+  },
+  "Docker/DevOps": {
+   "Not taught": 0,
+   "Poorly": 5,
+   "Moderately": 15,
+   "Well": 9,
+   "Extremely well": 3
+  }
+ },
+ "q3": {
+  "1": 4,
+  "2": 9,
+  "3": 13,
+  "4": 3,
+  "5": 3
+ },
+ "q3_median": 3.0,
+ "q4": {
+  "1–3 months": 13,
+  "Less than 1 month": 7,
+  "3–6 months": 6,
+  "More than 6 months": 5,
+  "Did not search, got it through a referral": 1
+ },
+ "q5": {
+  "No experience": 12,
+  "No replies to applications": 8,
+  "Missing specific technologies": 6,
+  "No portfolio": 5,
+  "English language": 1
+ },
+ "q14": {
+  "3": 1,
+  "4": 2,
+  "5": 29
+ },
+ "q14_median": 5.0,
+ "q11": {
+  "3": 15,
+  "2": 8,
+  "Graduate": 6,
+  "1": 2,
+  "4": 1
+ },
+ "q12": {
+  "Internship": 12,
+  "Not employed yet": 9,
+  "Part-time": 4,
+  "Freelance": 4,
+  "Full-time": 3
+ },
+ "q13": {
+  "Frontend": 11,
+  "Fullstack": 7,
+  "Data / ML": 6,
+  "Backend": 5,
+  "DevOps / Cloud": 3
+ },
+ "valid_missing": {
+  "q2": [
+   32,
+   0
+  ],
+  "q3": [
+   32,
+   0
+  ],
+  "q4": [
+   32,
+   0
+  ],
+  "q5": [
+   32,
+   0
+  ],
+  "q11": [
+   32,
+   0
+  ],
+  "q12": [
+   32,
+   0
+  ],
+  "q13": [
+   32,
+   0
+  ],
+  "q14": [
+   32,
+   0
+  ],
+  "q6": [
+   9,
+   23
+  ],
+  "q10": [
+   9,
+   23
+  ],
+  "q15": [
+   8,
+   24
+  ],
+  "r_P": [
+   32,
+   0
+  ],
+  "r_D": [
+   32,
+   0
+  ],
+  "r_G": [
+   32,
+   0
+  ],
+  "r_A": [
+   32,
+   0
+  ],
+  "r_F": [
+   32,
+   0
+  ],
+  "r_K": [
+   32,
+   0
+  ],
+  "t_P": [
+   32,
+   0
+  ],
+  "t_D": [
+   32,
+   0
+  ],
+  "t_G": [
+   32,
+   0
+  ],
+  "t_A": [
+   32,
+   0
+  ],
+  "t_F": [
+   32,
+   0
+  ],
+  "t_K": [
+   32,
+   0
+  ]
+ },
+ "valid_missing_q2_all37": [
+  37,
+  0
+ ],
+ "q2_by_q12": {
+  "Yes, I currently work or intern in IT": {
+   "Freelance": 2,
+   "Full-time": 3,
+   "Internship": 3,
+   "Not employed yet": 2,
+   "Part-time": 3
+  },
+  "Yes, I have interviewed but have not been hired yet": {
+   "Freelance": 2,
+   "Full-time": 0,
+   "Internship": 9,
+   "Not employed yet": 7,
+   "Part-time": 1
+  }
+ },
+ "q12_working": 23,
+ "q2_working": 13,
+ "q2_work_but_q12_not": 2,
+ "q2_nothired_but_q12_work": 12,
+ "q7_same_label_all_rows": 0,
+ "q8_extremely_two_skills": {
+  "Programming Fundamentals": 19,
+  "Databases/SQL": 19
+ },
+ "q9_resp_multi": 9,
+ "yr_groups": {
+  "Year 3": {
+   "n": 15,
+   "gap_mean": -0.44,
+   "gap_median": -0.5,
+   "q3_median": 3.0
+  },
+  "Year 4 + graduates": {
+   "n": 7,
+   "gap_mean": 0.17,
+   "gap_median": 0.33,
+   "q3_median": 2.0
+  },
+  "Years 1-2": {
+   "n": 10,
+   "gap_mean": -0.37,
+   "gap_median": -0.5,
+   "q3_median": 3.0
+  }
+ },
+ "yr_kruskal_p": 0.143,
+ "yr3_vs_grad_p": 0.09,
+ "spec": {
+  "Backend": {
+   "n": 5,
+   "q3_median": 3.0,
+   "q3_45": 0,
+   "gap_mean": -0.47
+  },
+  "Data / ML": {
+   "n": 6,
+   "q3_median": 2.0,
+   "q3_45": 0,
+   "gap_mean": -0.14
+  },
+  "DevOps / Cloud": {
+   "n": 3,
+   "q3_median": 3.0,
+   "q3_45": 0,
+   "gap_mean": 0.06
+  },
+  "Frontend": {
+   "n": 11,
+   "q3_median": 3.0,
+   "q3_45": 5,
+   "gap_mean": -0.36
+  },
+  "Fullstack": {
+   "n": 7,
+   "q3_median": 2.0,
+   "q3_45": 1,
+   "gap_mean": -0.31
+  }
+ },
+ "front_vs_rest": {
+  "front_n": 11,
+  "rest_n": 21,
+  "front_median": 3.0,
+  "rest_median": 2.0,
+  "front_45": 5,
+  "rest_45": 1,
+  "p": 0.00046952153719182594
+ },
+ "status": {
+  "work_n": 13,
+  "nh_n": 19,
+  "work_q3_median": 2.0,
+  "nh_q3_median": 3.0,
+  "p": 0.03121977987841921,
+  "work_gap": -0.19,
+  "nh_gap": -0.35
+ },
+ "sens": {
+  "n": 29,
+  "items": [
+   {
+    "skill": "Programming Fundamentals",
+    "gap": 0.17,
+    "p": 0.432
+   },
+   {
+    "skill": "Databases/SQL",
+    "gap": -0.28,
+    "p": 0.135
+   },
+   {
+    "skill": "Git/Version Control",
+    "gap": -0.07,
+    "p": 0.71
+   },
+   {
+    "skill": "REST APIs",
+    "gap": -0.28,
+    "p": 0.205
+   },
+   {
+    "skill": "Frameworks",
+    "gap": -0.28,
+    "p": 0.18
+   },
+   {
+    "skill": "Docker/DevOps",
+    "gap": -0.38,
+    "p": 0.045
+   }
+  ]
+ },
+ "overall_gap": -0.29,
+ "open": [
+  {
+   "item": "Q6",
+   "n_answers": 9,
+   "theme": "practice / real projects",
+   "n": 8
+  },
+  {
+   "item": "Q6",
+   "n_answers": 9,
+   "theme": "named technology / tool",
+   "n": 6
+  },
+  {
+   "item": "Q6",
+   "n_answers": 9,
+   "theme": "teamwork / communication / problem solving",
+   "n": 3
+  },
+  {
+   "item": "Q10",
+   "n_answers": 9,
+   "theme": "practice / real projects",
+   "n": 8
+  },
+  {
+   "item": "Q10",
+   "n_answers": 9,
+   "theme": "named technology / tool",
+   "n": 7
+  },
+  {
+   "item": "Q10",
+   "n_answers": 9,
+   "theme": "teamwork / communication / problem solving",
+   "n": 4
+  },
+  {
+   "item": "Q15",
+   "n_answers": 8,
+   "theme": "practice / real projects",
+   "n": 7
+  },
+  {
+   "item": "Q15",
+   "n_answers": 8,
+   "theme": "named technology / tool",
+   "n": 2
+  },
+  {
+   "item": "Q15",
+   "n_answers": 8,
+   "theme": "teamwork / communication / problem solving",
+   "n": 0
+  }
+ ]
+}

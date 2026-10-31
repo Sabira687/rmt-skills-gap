@@ -1,0 +1,7 @@
+skill,q7_median,q7_often_always,q8_median,q8_well_extremely,gap_mean,ci_lo,ci_hi,gap_median,gap_pos,gap_zero,gap_neg,wilcoxon_p
+Programming Fundamentals,5.0,31,5.0,29,0.09,-0.31,0.5,0.0,10,13,9,0.697
+Databases/SQL,4.0,29,5.0,30,-0.28,-0.59,0.03,0.0,6,12,14,0.098
+Git/Version Control,4.0,18,4.0,22,-0.16,-0.5,0.19,0.0,8,12,12,0.408
+REST APIs,3.0,13,4.0,20,-0.41,-0.81,0.0,-0.5,7,9,16,0.062
+Frameworks,3.0,9,3.0,15,-0.47,-0.91,-0.03,-0.5,6,10,16,0.05
+Docker/DevOps,3.0,5,3.0,12,-0.5,-0.81,-0.16,-0.5,4,12,16,0.011
